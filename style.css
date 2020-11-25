@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:600,800');
+
+/* main design code*/
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 150%;
+    color: #000000;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+.navbar {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ffffff;
+    padding: 1% 0;
+}
+
+.navbar-brand {
+    min-height: 55px;
+    padding: 13px 15px 5px;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+    padding-top: 26px;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #000000;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+   background-color: #5398c6;
+}
+.navbar-header {
+    padding-bottom: 50px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #5398c6;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #5398c6;
+}
+
+.navbar-inverse .navbar-toggle:hover .navbar-inverse .navbar-toggle:focus {
+    border-color: #5398c6;
+}
+
+.navbar-toggle {
+    background-color: black;
+    margin-top: 35px;
+}
+
+#mainTitle {
+    margin-bottom: -2%;
+    margin-top: -2%;
+}
+
+#headerImg {
+    width: 60%;
+}
+
+img.banner {
+    width: 100%;
+}
+
+h1 {
+    font-size: 260%;
+}
+
+h2 {
+font-size: 210%;
+}
+
+h3 {
+font-size: 150%;
+max-width: 80%;
+margin: 0 auto;
+}
+
+p {
+font-size: 100%;
+}
+
+#icon {
+    max-width: 200px;
+    margin: 1% auto;
+}
+.social {
+    font-size: 200%;
+    padding: 20px;
+}
+
+.social a {
+    padding: 3%;
+    color: #FFF;
+}
+
+.social a:hover {
+    color: #d5d5b5;
+}
+
+#home {
+    padding-top: 60px;
+}
+
+#about {
+    padding: 70px 0px;
+}
+
+.services-container h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.services-container p {
+    text-align: center;
+}
+
+#portfolio {
+    padding: 50px 0 50px;
+    background-color: #FFFFFF
+}
+#connect {
+    padding: 0 0 0%;
+    background-color: #000000;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a p:hover {
+    color: #5398c6;
+}
+
+.social a:hover {
+    color: #5496C1;
+}
+
+#compinfo {
+    font-size: 10px;
+    line-height: 0.5;
+}
+
+footer {
+    color: #FFFFFF;
+}
+/*Test coding*/
+
+#opacityid {
+    opacity: 0.5;
+}
+
+#opacityid:hover {
+    opacity: 1.0;
+}
+
+.boxcontainerimage {
+    position: relative;
+    text-align: center;
+}
+
+#design-info h2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-orientation: sideways;
+}
+
+.projectselector {
+    text-align: center;
+    padding: 60px 0px 40px 0px;
+}
+
+.projectselector h3 {
+    display: inline;
+    font-weight: 200;
+    padding: 20px;
+}
+
+.projectselector h3:hover {
+    border-bottom: 3px solid #5398c6;
+    padding-bottom: 3px;
+    color: #5496C1;
+}
+
+.imageBox {
+    padding: 10px;
+}
+
+.imageBox img {
+    max-width: 100%;
+    margin: auto 0;
+    padding: 10px;
+}
+
+.box {
+    background-color: #ffffff;
+    flex: 1;
+    height: 800px;
+    padding: 0;
+}
+
+.box:hover { 
+    transition: 1s;
+    opacity: 1.0;
+}
+
+.box img {
+   width: 100%;
+    height: 100%;
+  object-fit: cover;
+}
+
+/*Responsive Code */
+
+@media (max-width: 1366px) {
+    #headerImg {
+        width: 70%;
+}
+#mainTitle {
+    margin-top: 1%;
+}
+}
+
+@media (max-width: 1280px) {
+        #headerImg {
+            width: 50%;
+    }
+}
+
+@media (max-width: 1140px) {
+    #headerImg {
+        width: 58%;
+}
+}
+
+@media (max-width: 900px) {
+        #headerImg {
+            width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    #headerImg {
+        width: 80%;
+    }
+
+@media (max-width: 768px) {
+    #mainTitle {
+        margin-bottom: 1%;
+    }
+
+    .projectselector h3 {
+        font-size: 20px;
+    }
+
+    #headerImg {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 230%;
+    }
+    h2 {
+        font-size: 160%;
+    }
+    h3 {
+        font-size: 120%;
+        max-width: 90%;
+    }
+    p  {
+    font-size: 80%;
+    }
+    .col-sm-4 #icon {
+        max-width: 110px;
+        padding-bottom: 8%;
+    }
+    .social {
+        font-size: 200%;
+
+    }
+
+ }
+
+ @media (max-width: 700px) {
+    #headerImg {
+        width: 100%;
+    }
+
+
+@media (max-width: 650px) {
+    #headerImg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+   .navbar-brand  {
+       width: 30%;
+   }
+
+   #mainTitle {
+    margin-bottom: 14%;
+    }
+}
