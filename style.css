@@ -185,6 +185,7 @@ text-orientation: sideways;
     display: inline;
     font-weight: 200;
     padding: 20px;
+    cursor: pointer;
 }
 
 .projectselector h3:hover {
