@@ -301,6 +301,7 @@ transition: 0.25s;
     #headerImg {
         width: 80%;
     }
+}
 
 @media (max-width: 768px) {
     #mainTitle {
@@ -343,7 +344,7 @@ transition: 0.25s;
     #headerImg {
         width: 100%;
     }
-
+ }
 
 @media (max-width: 650px) {
     #headerImg {
