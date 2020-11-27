@@ -200,11 +200,11 @@ text-orientation: sideways;
     color: #5496C1;
 }
 
-.imageBox {
+.image-box {
     padding: 10px;
 }
 
-.imageBox img {
+.image-box img {
     max-width: 100%;
     margin: auto 0;
     padding: 10px;
@@ -217,21 +217,56 @@ text-orientation: sideways;
     padding: 0;
 }
 
-.box:hover { 
-    transition: 1s;
-    opacity: 1.0;
-}
-
 .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.imageBox .col-md-4:hover {
-    opacity: 0.5;
-    transition: 1.5s;
+.image-box {
+    position: relative;
+    text-align: center; 
 }
+
+.overlay {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay > * {
+transform: translateY(40px);
+transition: 0.25s;
+}
+
+.overlay:hover > * {
+    transform: translateY(0px);
+}
+
+
+.overlay-blur {
+    backdrop-filter: blur(2px);
+}
+
+#projectTitle {
+    font-size: 200%;
+    font-weight: 200;
+}
+
+    
 
 /*Responsive Code */
 
