@@ -85,7 +85,7 @@
     <div class="row">
       <div class="col-md-12 projectselector">
         <h3>All</h3>
-        <h3 onclick="myFunction()" id="iddesign">Design</h3>
+        <h3 id="iddesign">Design</h3>
         <h3>Development</h3>
         <h3>Accessibility</h3>
         <h3>Content Managment</h3>
@@ -141,9 +141,15 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script> 
+
   $(document).ready(function() {
-  alert($);
+
+    $('#iddesign').on('click', function() {
+  $('#data-design').toggle();
   });
+
+});
+
   </script>
 </body>
 
