@@ -10,4 +10,3 @@ function myFunction() {
         $(this).collapse('hide');
       }
     });
-

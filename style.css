@@ -207,7 +207,7 @@ text-orientation: sideways;
 .image-box img {
     max-width: 100%;
     margin: auto 0;
-    padding: 0px;
+    padding: 6px;
     padding-bottom: 24px;
 }
 
@@ -231,7 +231,7 @@ text-orientation: sideways;
 
 .overlay {
     position: absolute;
-    top: 2%;
+    top: -1%;
     left: 0%;
     opacity: 0;
     width: 100%;
@@ -259,7 +259,7 @@ transition: 0.25s;
 
 
 .overlay-blur {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
 }
 
 #projectTitle {
