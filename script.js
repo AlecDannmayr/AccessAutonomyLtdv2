@@ -1,5 +1,5 @@
 function myFunction() {
-  var x = document.getElementById("iddesign");
+  var x = document.getElementById("design");
   x.style.color = "#5496C1";
   x.style.borderBottom = "3px solid #5496C1";
   x.style.paddingbottom = "3px";
