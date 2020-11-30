@@ -91,7 +91,7 @@
     </div>
     <div class="row image-box">
       <a href="https://www.Salesimpact.io" target="_blank">
-        <div id="data-not-accessibility" class="col-md-4"> <img src="images/Sia-Landing-Page.png"
+        <div class="data-not-accessibility col-md-4"> <img src="images/Sia-Landing-Page.png"
             alt="Image of Salesimpact.io Landing Page"/>
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">Salesimpact.io</h3>
@@ -99,7 +99,7 @@
         </div>
       </a>
       <a href="https://www.visitbritain.org/" target="_blank">
-        <div id="data-not-design data-not-accessibility" class="col-md-4"> <img src="images/VisitBritian.png"
+        <div class="data-not-design col-md-4"> <img src="images/VisitBritian.png"
             alt="Image of Salesimpact.io Landing Page" />
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">VisitBritian.org</h3>
@@ -107,7 +107,7 @@
         </div>
       </a>
       <a href="https://www.arch-simplified.com/" target="_blank">
-        <div id="data-not-accessibility" class="col-md-4"><img src="images/arch-simplified.png"
+        <div class="data-not-accessibility col-md-4"><img src="images/arch-simplified.png"
             alt="Image of Arch-Simplified Landing Page">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">Arch-Simplified.com</h3>
@@ -115,7 +115,7 @@
         </div>
       </a>
       <a href="https://www.visualskies.com/" target="_blank">
-        <div id="data-not-accessibility" class="col-md-4"><img src="images/VisualSkies.png"
+        <div class="data-not-accessibility col-md-4"><img src="images/VisualSkies.png"
             alt="Image of VisualSkies Landing Page">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">VisualSkies.com</h3>
@@ -123,7 +123,7 @@
         </div>
       </a>
       <a href="https://www.MadameWax.com" target="_blank">
-        <div id="data-not-design data-not-accessibility" class="col-md-4"><img src="images/MadameWax LandingPage1.png"
+        <div class="data-not-design data-not-accessibility col-md-4"><img src="images/MadameWax LandingPage1.png"
             alt="Image of MadameWax Landing Page">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">MadameWax.com</h3>
@@ -131,21 +131,21 @@
         </div>
       </a>
       <a href="Images/FireGraphic.png" target="_blank">
-        <div id="data-not-development data-not-accessibility" class="col-md-4"><img src="images/FireGraphic.png" alt="Image of Fire Graphic">
+        <div class="data-not-development data-not-accessibility col-md-4"><img src="images/FireGraphic.png" alt="Image of Fire Graphic">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">Fire Graphic 1</h3>
           </div>
         </div>
       </a>
       <a href="Images/FirePhotoshop.png" target="_blank">
-        <div id="data-not-development data-not-accessibility" class="col-md-4"><img src="images/FirePhotoshop.png" alt="Image of Fire Graphic">
+        <div class="data-not-development data-not-accessibility col-md-4"><img src="images/FirePhotoshop.png" alt="Image of Fire Graphic">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">Fire Graphic 2</h3>
           </div>
         </div>
       </a>
       <a href="https://youtu.be/kETUpubdRfs" target="_blank">
-        <div id="data-not-development data-not-accessibility" class="col-md-4"><img src="images/AccessAutonomyTitleSequence2.png"
+        <div class="data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleSequence2.png"
             alt="Image of Title Animations">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">Title Animation</h3>
@@ -153,7 +153,7 @@
         </div>
       </a>
       <a href="https://youtu.be/TXMyMdEOcAA" target="_blank">
-        <div class="data-not-development data-not-accessibility" class="col-md-4"><img src="images/AccessAutonomyTitleAnimation.png"
+        <div class="data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleAnimation.png"
             alt="Image of Title Animations">
           <div class="overlay overlay-blur">
             <h3 id="projectTitle">AccessAutonomy Title Animation</h3>
@@ -206,13 +206,14 @@
     $(document).ready(function () {
 
       $("#iddesign").on('click', function () {
-        $("#data-not-design").toggle(0000); 
+        $(".data-not-design").toggle(0500);
       });
       $("#iddevelopment").on('click', function () {
-        $("#data-not-development").toggle(0000);
+        $(".data-not-development").toggle(0500);
       });
       $("#idaccessibility").on('click', function () {
-        $("#data-not-accessibility").(0000);
+        $(".data-not-accessibility").toggle(0500);
+      
       });
     });
   </script>
