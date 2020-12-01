@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>AccessAutonomy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="images/AccessAutonomyLogowlb.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/AccessAutonomyLogowlb.png" type="image/x-icon"/>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Dosis:600,800');
+
+      /* main design code*/
+
+      body {
+        font-family: 'Avenir Next' normal, sans-serif;
+        font-size: 150%;
+        color: #000000;
+        font-weight: 400;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 400;
+      }
+
+      .navbar {
+        background: #FFFFFF;
+        border-bottom: 1px solid #ffffff;
+        padding: 1% 0;
+      }
+
+      .navbar-brand {
+        min-height: 55px;
+        padding: 13px 15px 5px;
+      }
+
+      .navbar-nav li {
+        padding-right: 20px;
+        padding-top: 26px;
+      }
+
+      .navbar-inverse .navbar-nav li a {
+        color: #000000;
+      }
+
+      .navbar-inverse .navbar-nav li a:hover {
+        background-color: #5398c6;
+      }
+      .navbar-header {
+        padding-bottom: 50px;
+      }
+
+      .navbar-inverse .navbar-collapse,
+      .navbar-inverse .navbar-form {
+        border-color: #5398c6;
+      }
+
+      .navbar-inverse .navbar-toggle {
+        border-color: #5398c6;
+      }
+
+      .navbar-inverse .navbar-toggle:hover .navbar-inverse .navbar-toggle:focus {
+        border-color: #5398c6;
+      }
+
+      .navbar-toggle {
+        background-color: black;
+        margin-top: 35px;
+      }
+
+      .navbar-brand img {
+        max-height: 210%;
+      }
+
+      #mainTitle {
+        margin-bottom: -2%;
+        margin-top: -2%;
+      }
+
+      #headerImg {
+        width: 60%;
+      }
+
+      img.banner {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 260%;
+      }
+
+      h2 {
+        font-size: 210%;
+      }
+
+      h3 {
+        font-size: 150%;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 100%;
+      }
+
+      #icon {
+        max-width: 200px;
+        margin: 1% auto;
+      }
+      .social {
+        font-size: 200%;
+        padding: 20px;
+      }
+
+      .social a {
+        padding: 3%;
+        color: #FFF;
+      }
+
+      .social a:hover {
+        color: #d5d5b5;
+      }
+
+      #home {
+        padding-top: 60px;
+      }
+
+      #about {
+        padding: 70px 0;
+      }
+
+      .services-container h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .services-container p {
+        text-align: center;
+      }
+
+      #portfolio {
+        padding: 50px 0;
+        background-color: #FFFFFF;
+      }
+      #connect {
+        padding: 0;
+        background-color: #000000;
+      }
+
+      .contacts a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .contacts a p:hover {
+        color: #5398c6;
+      }
+
+      .social a:hover {
+        color: #5496C1;
+      }
+
+      #compinfo {
+        font-size: 10px;
+        line-height: 0.5;
+      }
+
+      footer {
+        color: #FFFFFF;
+      }
+      /*Test coding*/
+
+      #onSelect:focus {
+        border-bottom: 3px solid #5398c6;
+        padding-bottom: 3px;
+        color: #5496C1;
+      }
+
+      #opacityid {
+        opacity: 0.5;
+      }
+
+      #opacityid:hover {
+        opacity: 1.0;
+      }
+
+      .boxcontainerimage {
+        position: relative;
+        text-align: center;
+      }
+
+      #design-info h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-orientation: sideways;
+      }
+
+      .projectselector {
+        text-align: center;
+        padding: 0 0 40px;
+      }
+
+      .projectselector h3 {
+        display: inline;
+        font-weight: 200;
+        padding: 20px;
+        cursor: pointer;
+      }
+      .projectselector h3:hover {
+        border-bottom: 3px solid #5398c6;
+        padding-bottom: 3px;
+        color: #5496C1;
+      }
+
+      .image-box {
+        padding: 20px;
+      }
+
+      .image-box img {
+        max-width: 100%;
+        margin: auto 0;
+        padding: 6px 6px 24px;
+      }
+
+      .box {
+        background-color: #ffffff;
+        flex: 1;
+        height: 800px;
+        padding: 0;
+      }
+
+      .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .image-box {
+        position: relative;
+        text-align: center;
+      }
+
+      .overlay {
+        position: absolute;
+        top: -1%;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+      .overlay:hover {
+        opacity: 1;
+      }
+
+      .overlay > * {
+        transform: translateY(40px);
+        transition: 0.25s;
+      }
+
+      .overlay:hover > * {
+        transform: translateY(0px);
+      }
+
+      .overlay-blur {
+        backdrop-filter: blur(3px);
+      }
+
+      #projectTitle {
+        font-size: 200%;
+        font-weight: 200;
+      }
+
+      /*Responsive Code */
+
+      @media (max-width: 4000px) {
+        #mainTitle {
+          margin-top: 1.5%;
+        }
+        
+      }
+
+       @media (max-width: 2560px) {
+        #mainTitle {
+          margin-top: 2%;
+          font-size: 200%;
+        }
+        #headerImg {
+          width: 65%;
+        }
+        .projectselector h3 {
+        font-size: 300%;
+        padding: 40px;
+      }
+      }
+
+
+      @media (max-width: 2300px) {
+        #mainTitle {
+          margin-top: 1%;
+        }
+        #headerImg {
+          width: 55%;
+        }
+        .projectselector h3 {
+        font-size: 260%;
+        padding: 30px;
+      }
+      }
+
+      @media (max-width: 1920px) {
+
+      }
+
+      @media (max-width: 1680px) {
+
+      }
+
+       @media (max-width: 1600px) {
+
+      }
+
+      @media (max-width: 1536px) {
+        #headerImg {
+          width: 60%;
+          margin-bottom: 30px;
+        }
+        #mainTitle {
+          margin-top: 0%;
+        }
+        .projectselector h3 {
+        font-size: 200%;
+        padding: 20px;
+      }
+      }
+
+      @media (max-width: 1366px) {
+        #headerImg {
+          width: 60%;
+        }
+        #mainTitle {
+          margin-top: 0%;
+        }
+      }
+
+      @media (max-width: 1440px) {
+      }
+
+      @media (max-width: 1280px) {
+        #headerImg {
+          width: 60%;
+        }
+      }
+
+      @media (max-width: 1140px) {
+        #headerImg {
+          width: 64%;
+        }
+      }
+
+      @media (max-width: 1024px) {}
+
+      @media (max-width: 900px) {
+        #headerImg {
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 850px) {
+        #headerImg {
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #mainTitle {
+          margin-bottom: 1%;
+        }
+
+        .projectselector h3 {
+          font-size: 20px;
+        }
+
+        #headerImg {
+          width: 90%;
+        }
+
+        h1 {
+          font-size: 230%;
+        }
+        h2 {
+          font-size: 160%;
+        }
+        h3 {
+          font-size: 120%;
+          max-width: 90%;
+        }
+        p {
+          font-size: 80%;
+        }
+        .col-sm-4 #icon {
+          max-width: 110px;
+          padding-bottom: 8%;
+        }
+        .social {
+          font-size: 200%;
+
+        }
+
+      }
+
+      @media (max-width: 700px) {
+        #headerImg {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 650px) {
+        #headerImg {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .navbar-brand {
+          width: 30%;
+        }
+
+        #mainTitle {
+          margin-bottom: 14%;
+        }
+      }
+
+      @media (max-width: 360px) {
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <img src="images/AccessAutonomyLogo1.png" alt="AccessAutonomy Logo"></img>
+          </a>
+        </div>
+        <!-- end of navbar -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#portfolio">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <!-- <li><a href="#portfolio">Services</a></li> -->
+            <li>
+              <a href="#connect">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end of navbar collapse -->
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of nav -->
+    <!-- Before fold info -->
+    <div id="portfolio" class="container-fluid text-center">
+      <br><br><br><br><br><br>
+      <div class="row"></div>
+      <div class="col-md-12" id="mainTitle">
+        <h1>Design. Build. Maintain.</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="images/LaptopandPhone.png" id="headerImg" alt="">
+        </div>
+      </div>
+      <!-- End of Row -->
+    </div>
+    <!-- End of Container -->
+    <div class="container-fluid text-center">
+      <br><br><br>
+    </div>
+    <!-- Services boxcontainer -->
+    <!-- In development <div class="boxcontainer"></div> <div class="row"> <div class="col-md-4 services-container"> <h2>Solving problems and filling the gaps in communication.</h2> <p>AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance.</p> </div> <div class="boxcontainerimage"></div> <div id="design-info" class="col-md-2 box"> <h2>Design.</h2><img id="opacityid" src="Images/Earth-Communications-Image.jpg" /> </div> <div id="design-info" class="col-md-2 box"><h2>Development.</h2><img id="opacityid" src="images/Skills.jpg"></div> <div id="design-info" class="col-md-2 box"><h2>Accessibility</h2><img id="opacityid" src="Images/Access.jpg" /></div> <div id="design-info" class="col-md-2 box"><h2>Content management</h2><img id="opacityid" src="Images/Web-Development-Image.jpg" /></div> </div> </div> </div> -->
+    <div class="container-fluid projects">
+      <!-- Projects container -->
+      <div class="row">
+        <div id="projects" class="col-md-12 projectselector">
+          <h3 id="idall">All</h3>
+          <h3 id="iddesign">Design</h3>
+          <h3 id="iddevelopment">Development</h3>
+          <h3 id="idaccessibility">Accessibility</h3>
+          <h3 id="idcontent">Content Management</h3>
+          <h3 id="idvideo-and-animations">Video and Animations</h3>
+          <!-- <h3 id="idhtml-emails">Html Emails</h3> <h3 id="idsignatures">Signatures</h3> -->
+        </div>
+      </div>
+      <div class="row image-box">
+        <a href="https://www.Salesimpact.io" target="_blank">
+          <div class="idall data-not-video data-not-accessibility col-md-4">
+            <img src="images/Sia-Landing-Page.png" alt="Image of Salesimpact.io Landing Page"/>
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">Salesimpact.io</h3>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.visualskies.com/" target="_blank">
+          <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/VisualSkies.png" alt="Image of VisualSkies Landing Page">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">VisualSkies.com</h3>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.arch-simplified.com/" target="_blank">
+          <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/arch-simplified.png" alt="Image of Arch-Simplified Landing Page">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">Arch-Simplified.com</h3>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.visitbritain.org/" target="_blank">
+          <div class="idall data-not-video data-not-design col-md-4">
+            <img src="images/VisitBritian.png" alt="Image of Salesimpact.io Landing Page"/>
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">VisitBritain.org</h3>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.MadameWax.com" target="_blank">
+          <div class="idall data-not-video data-not-design data-not-accessibility col-md-4"><img src="images/MadameWax LandingPage1.png" alt="Image of MadameWax Landing Page">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">MadameWax.com</h3>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtu.be/TXMyMdEOcAA" target="_blank">
+          <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleAnimation.png" alt="Image of Title Animations">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">AccessAutonomy Title Animation</h3>
+            </div>
+          </div>
+        </a>
+        <a href="images/FireGraphic.png" target="_blank">
+          <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/FireGraphic.png" alt="Image of Fire Graphic">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">Fire Flies Graphic (1)</h3>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtu.be/kETUpubdRfs" target="_blank">
+          <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleSequence2.png" alt="Image of Title Animations">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">Logo Animation</h3>
+            </div>
+          </div>
+        </a>
+        <a href="images/FirePhotoshop.png" target="_blank">
+          <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/FirePhotoshop.png" alt="Image of Fire Graphic">
+            <div class="overlay overlay-blur">
+              <h3 id="projectTitle">Fire Flies Graphic (2)</h3>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <!-- <div class="row imageBox"> <div id="" class="col-md-4"><img src="images/VisitBritian-Landingpage.png"></div> </div> -->
+    </div>
+    <!-- End of Row -->
+  </div>
+  <!-- End of Container -->
+  <!-- Contact container -->
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Map of location -->
+      </div>
+      <div class="col-md-6">
+        <!-- Contact Form -->
+      </div>
+    </div>
+    <!-- End of Row -->
+  </div>
+  <!-- End of Container -->
+  <footer id="connect" class="container-fluid text-center">
+    <div class="row">
+      <div class="social">
+        <a href="https://www.github.com/AlecDannmayr" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/12601742/admin/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <div class="row contacts">
+      <div class="col-md-12">
+        <a href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site">
+          <p>Email: hello@accessautonomy.com</p>
+        </a>
+        <p>Tel: 07837923216</p>
+        <p id="compinfo">Company No. 128650075</p>
+        <p id="compinfo">© 2020 AccessAutonomy Ltd</p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of container -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).on('click', '.navbar-collapse.in', function (e) {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) {
+        $(this).collapse('hide');
+      }
+    });
+    ""
+
+    $(document).ready(function () {
+    
+      $("#idall").on('click', function () {
+        $(".idall").show(000);
+      });
+      $("#iddesign").on('click', function () {
+        $(".data-not-design").toggle(000);
+      });
+      $("#iddevelopment").on('click', function () {
+        $(".data-not-development").toggle(000);
+      });
+      $("#idaccessibility").on('click', function () {
+        $(".data-not-accessibility").toggle(000);
+      });
+      $("#idcontent").on('click', function () {
+        $(".data-not-content").toggle(000);
+      });
+      $("#idvideo-and-animations").on('click', function () {
+        $(".data-not-video").toggle(000);
+      });
+    });
+  </script>
+</body>
+
+</html>
