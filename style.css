@@ -3,7 +3,7 @@
 /* main design code*/
 
 body {
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'Avenir Next' normal, sans-serif;
     font-size: 150%;
     color: #000000;
     font-weight: 400;
@@ -55,6 +55,10 @@ h1, h2, h3 {
 .navbar-toggle {
     background-color: black;
     margin-top: 35px;
+}
+
+.navbar-brand img {
+    max-height: 210%;
 }
 
 #mainTitle {
@@ -266,8 +270,6 @@ transition: 0.25s;
     font-size: 200%;
     font-weight: 200;
 }
-
-    
 
 /*Responsive Code */
 
