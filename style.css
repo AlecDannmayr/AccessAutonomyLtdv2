@@ -197,7 +197,6 @@ text-orientation: sideways;
     padding: 20px;
     cursor: pointer;
 }
-
 .projectselector h3:hover {
     border-bottom: 3px solid #5398c6;
     padding-bottom: 3px;
