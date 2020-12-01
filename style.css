@@ -272,6 +272,18 @@ transition: 0.25s;
 
 /*Responsive Code */
 
+@media (max-width: 4000px) {
+    #mainTitle {
+        margin-top: 1.5%;
+        }
+}
+
+@media (max-width: 2300px) {
+    #mainTitle {
+        margin-top: 1%;
+        }
+}
+
 @media (max-width: 1366px) {
     #headerImg {
         width: 60%;
