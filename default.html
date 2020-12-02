@@ -24,6 +24,7 @@
         font-size: 150%;
         color: #000000;
         font-weight: 400;
+        margin: 0;
       }
 
       h1,
@@ -44,7 +45,7 @@
       }
 
       .navbar-nav li {
-        padding-right: 20px;
+        padding-right: 50px;
         padding-top: 26px;
       }
 
@@ -111,18 +112,13 @@
       p {
         font-size: 100%;
       }
-
-      #icon {
-        max-width: 200px;
-        margin: 1% auto;
-      }
       .social {
         font-size: 200%;
         padding: 20px;
       }
 
       .social a {
-        padding: 3%;
+        padding: 2%;
         color: #FFF;
       }
 
@@ -177,6 +173,19 @@
       footer {
         color: #FFFFFF;
       }
+
+
+
+
+
+
+
+
+    
+
+
+
+
       /*Test coding*/
 
       #onSelect:focus {
@@ -359,8 +368,19 @@
           margin-bottom: 1%;
         }
 
+        .image-box {
+        padding: 5px;
+      }
+
+      .image-box img {
+        max-width: 100%;
+        margin: auto 0;
+        padding: 0px 0px 5px;
+      }
+        
         .projectselector h3 {
-          font-size: 100%
+          font-size: 90%;
+          padding: 0px 30px 0px 30px;
         }
 
         #headerImg {
@@ -387,8 +407,7 @@
         .social {
           font-size: 200%;
 
-        }
-
+      }
       }
 
       @media (max-width: 700px) {
@@ -400,6 +419,10 @@
       @media (max-width: 650px) {
         #headerImg {
           width: 100%;
+        }
+        .projectselector h3 {
+         
+          padding: 10px;
         }
       }
 
@@ -572,8 +595,8 @@
     <!-- End of Row -->
   </div>
   <!-- End of Container -->
+
   <footer id="connect" class="container-fluid text-center">
-    <div class="row">
       <div class="social">
         <a href="https://www.github.com/AlecDannmayr" target="_blank">
           <i class="fab fa-github"></i>
@@ -588,10 +611,8 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-    </div>
     <!-- end of row -->
     <div class="row contacts">
-      <div class="col-md-12">
         <a href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site">
           <p>Email: hello@accessautonomy.com</p>
         </a>
@@ -599,7 +620,6 @@
         <p id="compinfo">Company No. 128650075</p>
         <p id="compinfo">© 2020 AccessAutonomy Ltd</p>
       </div>
-    </div>
   </footer>
   <!-- end of container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
