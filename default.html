@@ -9,7 +9,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon"/>
@@ -51,7 +50,7 @@
       }
 
       .navbar-inverse .navbar-nav li a:hover {
-        background-color: #DE6E30;
+        background-color: #ffa500;
       }
       .navbar-header {
         padding-bottom: 50px;
@@ -59,15 +58,15 @@
 
       .navbar-inverse .navbar-collapse,
       .navbar-inverse .navbar-form {
-        border-color: #5398c6;
+        border-color: #FFA500;
       }
 
       .navbar-inverse .navbar-toggle {
-        border-color: #5398c6;
+        border-color: #FFA500;
       }
 
       .navbar-inverse .navbar-toggle:hover .navbar-inverse .navbar-toggle:focus {
-        border-color: #DE6E30;
+        border-color: #FFA500;
       }
 
       .navbar-toggle {
@@ -170,17 +169,16 @@
         padding: 0 0 40px;
       }
 
-      .projectselector h3 {
+      .projectselector p {
         display: inline;
-        font-weight: 200;
+        font-weight: 300;
         padding: 20px;
         cursor: pointer;
       }
 
-      .projectselector h3:hover {
-        border-bottom: 3px solid #DE6E30;
-        padding-bottom: 3px;
-        color: #DE6E30;
+      .projectselector p:hover {
+        color: #FFA500;
+        text-shadow: .5px .5px 12.4px #DE6E30;
       }
 
       .image-box {
@@ -303,7 +301,7 @@
         #mainTitle {
           margin-top: -3%;
         }
-        .projectselector h3 {
+        .projectselector p {
           font-size: 120%;
         }
       }
@@ -312,7 +310,7 @@
         #headerImg {
           width: 64%;
         }
-        .projectselector h3 {
+        .projectselector p {
           font-size: 100%;
         }
       }
@@ -321,7 +319,7 @@
         #headerImg {
           width: 80%;
         }
-        .projectselector h3 {
+        .projectselector p {
           font-size: 100%;
         }
       }
@@ -347,7 +345,7 @@
           padding: 0 0 5px;
         }
 
-        .projectselector h3 {
+        .projectselector p {
           font-size: 90%;
           padding: 0 30px;
         }
@@ -389,7 +387,7 @@
         #headerImg {
           width: 100%;
         }
-        .projectselector h3 {
+        .projectselector p {
 
           padding: 10px;
         }
@@ -419,12 +417,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="Navigation burger menu for dropdown items">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#" rel=”noreferrer” class="navbar-brand">
+          <a aria-label="Navigate to Home for AccessAutonomy" href="#" rel=”noreferrer” class="navbar-brand">
             <img src="images/AccessAutonomyLogo1.jpeg2000" alt="AccessAutonomy Logo"></img>
           </a>
         </div>
@@ -432,14 +430,14 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a rel=”noreferrer” href="#portfolio">Home</a>
+              <a aria-label="Navigation Button to portfolio section of this page" rel=”noreferrer” href="#portfolio">Home</a>
             </li>
             <li>
-              <a rel=”noreferrer” href="#projects">Projects</a>
+              <a aria-label="Navigation Button to projects section of this page" rel=”noreferrer” href="#projects">Projects</a>
             </li>
             <!-- <li><a href="#portfolio">Services</a></li> -->
             <li>
-              <a rel=”noreferrer” href="#connect">Contact Us</a>
+              <a aria-label="Navigation Button to connection and contact section of this page" rel=”noreferrer” href="#connect">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -468,22 +466,21 @@
       <br><br><br>
     </div>
     <!-- Services boxcontainer -->
-    <!-- In development <div class="boxcontainer"></div> <div class="row"> <div class="col-md-4 services-container"> <h2>Solving problems and filling the gaps in communication.</h2> <p>AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance.</p> </div> <div class="boxcontainerimage"></div> <div id="design-info" class="col-md-2 box"> <h2>Design.</h2><img id="opacityid" src="Images/Earth-Communications-Image.jpg" /> </div> <div id="design-info" class="col-md-2 box"><h2>Development.</h2><img id="opacityid" src="images/Skills.jpg"></div> <div id="design-info" class="col-md-2 box"><h2>Accessibility</h2><img id="opacityid" src="Images/Access.jpg" /></div> <div id="design-info" class="col-md-2 box"><h2>Content management</h2><img id="opacityid" src="Images/Web-Development-Image.jpg" /></div> </div> </div> </div> -->
+    <!-- In development <div class="boxcontainer"></div> <div class="row"> <div class="col-md-4 services-container"> <p>Solving problems and filling the gaps in communication.</p> <p>AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance.</p> </div> <div class="boxcontainerimage"></div> <div id="design-info" class="col-md-2 box"> <p>Design.</hp><img id="opacityid" src="Images/Earth-Communications-Image.jpg" /> </div> <div id="design-info" class="col-md-2 box"><p>Development.</p><img id="opacityid" src="images/Skills.jpg"></div> <div id="design-info" class="col-md-2 box"><p>Accessibility</hp><img id="opacityid" src="Images/Access.jpg" /></div> <div id="design-info" class="col-md-2 box"><p>Content management</p><img id="opacityid" src="Images/Web-Development-Image.jpg" /></div> </div> </div> </div> -->
     <div class="container-fluid projects">
       <!-- Projects container -->
       <div class="row">
-        <div id="projects" class="col-md-12 projectselector">
-          <h3 id="idall">All</h3>
-          <h3 id="iddesign">Design</h3>
-          <h3 id="iddevelopment">Development</h3>
-          <h3 id="idaccessibility">Accessibility</h3>
-          <h3 id="idcontent">Content Management</h3>
-          <h3 id="idvideo-and-animations">Video and Animations</h3>
-          <!-- <h3 id="idhtml-emails">Html Emails</h3> <h3 id="idsignatures">Signatures</h3> -->
+        <div id="projects" class="col-md-12 projectselector" style="font-size: 20px;">
+          <p id="idall">All</p>
+          <p id="iddesign">Design</p>
+          <p id="iddevelopment">Development</p>
+          <p id="idaccessibility">Accessibility</p>
+          <p id="idcontent">Content Management</p>
+          <p id="idvideo-and-animations">Video and Animations</p>
         </div>
       </div>
       <div class="row image-box">
-        <a href="https://www.Salesimpact.io" target="_blank" rel=”noreferrer”>
+        <a href="https://www.Salesimpact.io" aria-label="Navigation Button to www.salesimpact.io" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-video data-not-accessibility col-md-4">
             <img src="images/Sia-Landing-Page.jpeg2000" alt="Image of Salesimpact.io Landing Page"/>
             <div class="overlay overlay-blur">
@@ -491,57 +488,57 @@
             </div>
           </div>
         </a>
-        <a href="https://www.visualskies.com/" target="_blank" rel="noopener">
+        <a href="https://www.visualskies.com/" aria-label="Navigation Button to www.visualskies.com" target="_blank" rel="noopener">
           <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/VisualSkies.jpeg2000" alt="Image of VisualSkies Landing Page">
             <div class="overlay overlay-blur">
               <p id="projectTitle">VisualSkies.com</p>
             </div>
           </div>
         </a>
-        <a href="https://www.arch-simplified.com/" target="_blank" rel=”noreferrer”>
+        <a href="https://www.arch-simplified.com/" aria-label="Navigation Button to www.Arch-Simplified.com" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/arch-simplified.jpeg2000" alt="Image of Arch-Simplified Landing Page">
             <div class="overlay overlay-blur">
               <p id="projectTitle">Arch-Simplified.com</p>
             </div>
           </div>
         </a>
-        <a href="https://www.visitbritain.org/" target="_blank" rel=”noreferrer”>
+        <a href="https://www.visitbritain.org/" aria-label="Navigation Button to www.VisitBritain.com" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-video data-not-design col-md-4">
-            <img src="images/VisitBritian.jpeg2000" alt="Image of Salesimpact.io Landing Page"/>
+            <img src="images/VisitBritian.jpeg2000" alt="Image of VisitBritain.com Landing Page"/>
             <div class="overlay overlay-blur">
               <p id="projectTitle">VisitBritain.org</p>
             </div>
           </div>
         </a>
-        <a href="https://www.MadameWax.com" target="_blank" rel=”noreferrer”>
+        <a href="https://www.MadameWax.com" aria-label="Navigation Button to www.madamewax.com" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-video data-not-design data-not-accessibility col-md-4"><img src="images/MadameWax LandingPage1.jpeg2000" alt="Image of MadameWax Landing Page">
             <div class="overlay overlay-blur">
               <p id="projectTitle">MadameWax.com</p>
             </div>
           </div>
         </a>
-        <a href="https://youtu.be/TXMyMdEOcAA" target="_blank" rel=”noreferrer”>
+        <a href="https://youtu.be/TXMyMdEOcAA" aria-label="Navigation Button to an animation of the AccessAutonomy logo in Youtube" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleAnimation.jpeg2000" alt="Image of Title Animations">
             <div class="overlay overlay-blur">
               <p id="projectTitle">AccessAutonomy Animation</p>
             </div>
           </div>
         </a>
-        <a href="images/FireGraphic.png" target="_blank" rel=”noreferrer”>
+        <a href="images/FireGraphic.png" aria-label="Navigation Button to a graphic design of a women with hair made of fire" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/FireGraphic1.jpeg2000" alt="Image of Fire Graphic">
             <div class="overlay overlay-blur">
               <p id="projectTitle">Fire Flies Graphic (1)</p>
             </div>
           </div>
         </a>
-        <a href="https://youtu.be/kETUpubdRfs" target="_blank" rel=”noreferrer”>
+        <a href="https://youtu.be/kETUpubdRfs" aria-label="Navigation Button to an animation of the AccessAutonomy logo title in Youtube" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleSequence2.jpeg2000" alt="Image of Title Animations">
             <div class="overlay overlay-blur">
               <p id="projectTitle">Logo Animation</p>
             </div>
           </div>
         </a>
-        <a href="images/FirePhotoshop.jpeg2000" target="_blank" rel=”noreferrer”>
+        <a href="images/FirePhotoshop.jpeg2000" aria-label="Navigation Button to a graphic design of a women with hair made of fire swishing her hair" target="_blank" rel=”noreferrer”>
           <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/FireGraphic.jpeg2000" alt="Image of Fire Graphic">
             <div class="overlay overlay-blur">
               <p id="projectTitle">Fire Flies Graphic (2)</p>
@@ -561,21 +558,21 @@
   <footer id="connect" class="container-fluidls text-center">
     <div class="row contacts">
       <div class="social">
-        <a href="https://www.github.com/AlecDannmayr" target="_blank" rel=”noreferrer”>
+        <a aria-label="Navigate to Alec Dannmayrs github account" href="https://www.github.com/AlecDannmayr" target="_blank" rel=”noreferrer”>
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/company/12601742/admin/" target="_blank" rel=”noreferrer”>
+        <a aria-label="Navigate to AccessAutonomy Facebook account" href="https://www.linkedin.com/company/12601742/admin/" target="_blank" rel=”noreferrer”>
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel=”noreferrer”>
+        <a aria-label="Navigate to AccessAutonomy youtube account" href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel=”noreferrer”>
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="" target="_blank" rel=”noreferrer”>
+        <a aria-label="Navigate to AccessAutonomy Instagram account" href="" target="_blank" rel=”noreferrer”>
           <i class="fab fa-instagram"></i>
         </a>
       </div>
       <!-- end of row -->
-      <a href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site" rel=”noreferrer”>
+      <a aria-label="Opens up an email addressed to hello@accessautonomy.com" href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site" rel=”noreferrer”>
         <p>Email: hello@accessautonomy.com</p>
       </a>
       <p>Tel: 07837923216</p>
@@ -591,7 +588,7 @@
         $(this).collapse('hide');
       }
     });
-    ""
+  
 
     $(document).ready(function () {
 
