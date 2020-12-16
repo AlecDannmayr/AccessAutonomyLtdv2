@@ -1,662 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>AccessAutonomy</title>
-<title>AccessAutonomy</title>
-<meta name="keywords" content="AccessAutonomy,AccessAutonomyLtd,Access,Access Autonomy,Autonomy,Web Development,Development,Front-end Developer,Frontend Developer, Web Designer, Designer, Graphic Designer, Web Accessibility, Web Developer in London, We Content Editor, Html Email Developer">
-	<meta name="description" content="More companies than ever are turning to digital communication and remote working to continue to power their business, at AccessAutonomy it is our job to be problem solvers and figure out how to fill the gaps in digital communication. AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance. With years of experience in front-end languages and modern frameworks to leave clients with an ongoing legacy and accessible development."/>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link rel="icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon"/>
-    <link rel="shortcut icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon"/>
+<head>
+  <title>AccessAutonomy</title>
+  <title>AccessAutonomy</title>
+  <meta name="keywords"
+    content="AccessAutonomy,AccessAutonomyLtd,Access,Access Autonomy,Autonomy,Web Development,Development,Front-end Developer,Frontend Developer, Web Designer, Designer, Graphic Designer, Web Accessibility, Web Developer in London, We Content Editor, Html Email Developer">
+  <meta name="description"
+    content="More companies than ever are turning to digital communication and remote working to continue to power their business, at AccessAutonomy it is our job to be problem solvers and figure out how to fill the gaps in digital communication. AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance. With years of experience in front-end languages and modern frameworks to leave clients with an ongoing legacy and accessible development." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon" />
+  <link rel="shortcut icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon" />
 
-    <style>
-      
+  <style>
+    /* main design code*/
 
-      /* main design code*/
+    body {
+      font-family: 'Avenir Next'normal, sans-serif;
+      font-size: 150%;
+      color: #000000;
+      font-weight: 400;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-      body {
-        font-family: 'Avenir Next' normal, sans-serif;
-        font-size: 150%;
-        color: #000000;
-        font-weight: 400;
-        margin: 0;
-        overflow-x: hidden;
-      }
+    .navbar {
+      background: #FFFFFF;
+      border-bottom: 1px solid #ffffff;
+      padding: 1% 0;
+    }
 
-      .navbar {
-        background: #FFFFFF;
-        border-bottom: 1px solid #ffffff;
-        padding: 1% 0;
-      }
+    .navbar-brand {
+      min-height: 55px;
+      padding: 13px 15px 5px;
+    }
 
-      .navbar-brand {
-        min-height: 55px;
-        padding: 13px 15px 5px;
-      }
+    .navbar-nav li {
+      padding-right: 50px;
+      padding-top: 26px;
+    }
 
-      .navbar-nav li {
-        padding-right: 50px;
-        padding-top: 26px;
-      }
+    .navbar-inverse .navbar-nav li a {
+      color: #000000;
+    }
 
-      .navbar-inverse .navbar-nav li a {
-        color: #000000;
-      }
+    .navbar-inverse .navbar-nav li a:hover {
+      background-color: #ffa500;
+    }
 
-      .navbar-inverse .navbar-nav li a:hover {
-        background-color: #ffa500;
-      }
-      .navbar-header {
-        padding-bottom: 50px;
-      }
+    .navbar-header {
+      padding-bottom: 50px;
+    }
 
-      .navbar-inverse .navbar-collapse,
-      .navbar-inverse .navbar-form {
-        border-color: #FFA500;
-      }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+      border-color: #FFA500;
+    }
 
-      .navbar-inverse .navbar-toggle {
-        border-color: #FFA500;
-      }
+    .navbar-inverse .navbar-toggle {
+      border-color: #FFA500;
+    }
 
-      .navbar-inverse .navbar-toggle:hover .navbar-inverse .navbar-toggle:focus {
-        border-color: #FFA500;
-      }
+    .navbar-inverse .navbar-toggle:hover .navbar-inverse .navbar-toggle:focus {
+      border-color: #FFA500;
+    }
 
-      .navbar-toggle {
-        background-color: black;
-        margin-top: 35px;
-      }
+    .navbar-toggle {
+      background-color: black;
+      margin-top: 35px;
+    }
 
-      .navbar-brand img {
-        max-height: 210%;
-      }
+    .navbar-brand img {
+      max-height: 210%;
+    }
 
-      h1,
-      h2,
-      h3 {
-        font-weight: 400;
-      }
+    h1,
+    h2,
+    h3 {
+      font-weight: 400;
+    }
 
-      .doughnut {
+    .doughnut {
 
-      border: 50px solid #FFA500;
-      border-radius: 700px;
-      height: 500px;
-      width: 500px;  
-      margin-top: -200px;
-      margin-left: -200px;
-      margin-bottom: -460px;
-      }
-
-      .doughnut-mid {
       border: 50px solid #FFA500;
       border-radius: 700px;
       height: 500px;
       width: 500px;
-     float: right;
-  
-      }
+      margin-top: -200px;
+      margin-left: -200px;
+      margin-bottom: -460px;
+    }
 
+    .doughnut-mid {
+      border: 50px solid #FFA500;
+      border-radius: 700px;
+      height: 500px;
+      width: 500px;
+      float: right;
+
+    }
+
+    #mainTitle {
+      margin-bottom: -2%;
+      margin-top: -2%;
+    }
+
+    #headerImg {
+      width: 60%;
+    }
+
+    img.banner {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 260%;
+    }
+
+    h2 {
+      font-size: 210%;
+    }
+
+    h3 {
+      font-size: 150%;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 100%;
+    }
+
+    .social {
+      font-size: 200%;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    .social a {
+      padding: 2%;
+      color: #FFF;
+    }
+
+    .social a:hover {
+      color: #FCA502;
+    }
+
+    #home {
+      padding-top: 60px;
+    }
+
+    #about {
+      padding: 70px 0;
+    }
+
+    .services-container p {
+      text-align: center;
+    }
+
+    .services-container h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    #portfolio {
+      padding: 50px 0;
+      background-color: #FFFFFF;
+      margin-left: 10px;
+    }
+
+    .boxcontainerimage {
+      position: relative;
+      text-align: center;
+    }
+
+    #design-info h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-orientation: sideways;
+    }
+
+    .projectselector {
+      text-align: center;
+      padding: 0 0 40px;
+    }
+
+    .projectselector p {
+      display: inline;
+      font-weight: 300;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .projectselector p:hover {
+      color: #FFA500;
+      text-shadow: .5px .5px 12.4px #DE6E30;
+    }
+
+    .image-box {
+      padding: 0;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      margin: auto 0;
+      padding: 6px 6px 24px;
+    }
+
+    .box {
+      background-color: #ffffff;
+      flex: 1;
+      height: 800px;
+      padding: 0;
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-box {
+      position: relative;
+      text-align: center;
+    }
+
+    .doughnut {
+      border: 80px solid #FFA500;
+      border-radius: 700px;
+      height: 500px;
+      width: 500px;
+      margin-top: -200px;
+      margin-left: -200px;
+      margin-bottom: -460px;
+    }
+
+    .doughnut-mid {
+      border: 70px solid #5498C6;
+      border-radius: 700px;
+      height: 500px;
+      width: 500px;
+      float: right;
+      margin-right: -400px;
+      margin-top: -360px;
+
+    }
+
+    .doughnut-lower {
+      border: 30px solid #4AD7C4;
+      border-radius: 700px;
+      height: 400px;
+      width: 400px;
+      margin-top: -100px;
+      margin-left: -200px;
+      margin-bottom: -460px;
+    }
+
+    .doughnut-footer {
+      border: 70px solid #FCA502;
+      border-radius: 700px;
+      height: 800px;
+      width: 800px;
+      float: right;
+      margin-right: -300px;
+      margin-top: -700px;
+
+    }
+
+    .overlay {
+      position: absolute;
+      top: -1%;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    .overlay:hover {
+      opacity: 1;
+    }
+
+    .overlay>* {
+      transform: translateY(40px);
+      transition: 0.25s;
+    }
+
+    .overlay:hover>* {
+      transform: translateY(0px);
+    }
+
+    .overlay-blur {
+      backdrop-filter: blur(3px);
+    }
+
+    #projectTitle {
+      font-size: 200%;
+      font-weight: 200;
+    }
+
+    footer {
+      color: #FFFFFF;
+      margin-top: -80px;
+      margin-bottom: 10px;
+      padding-bottom: 60px;
+    }
+
+    #connect {
+      background-color: #000000;
+    }
+
+    .contacts a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .contacts a p:hover {
+      color: #DE6E30;
+    }
+
+    .social a:hover {
+      color: #DE6E30;
+    }
+
+    /*Responsive Code */
+
+    @media (max-width: 4000px) {
       #mainTitle {
-        margin-bottom: -2%;
-        margin-top: -2%;
+        margin-top: 1.5%;
+      }
+    }
+
+    @media (max-width: 2300px) {
+      #mainTitle {
+        margin-top: 1%;
       }
 
+      #headerImg {
+        width: 55%;
+      }
+    }
+
+    @media (max-width: 1366px) {
+      #headerImg {
+        width: 65%;
+      }
+
+    }
+
+    @media (max-width: 1280px) {
       #headerImg {
         width: 60%;
       }
 
-      img.banner {
-        width: 100%;
+      .projectselector p {
+        font-size: 120%;
       }
+    }
 
-      h1 {
-        font-size: 260%;
-      }
-
-      h2 {
-        font-size: 210%;
-      }
-
-      h3 {
-        font-size: 150%;
-        max-width: 80%;
-        margin: 0 auto;
-      }
-
-      p {
-        font-size: 100%;
-      }
-
-      .social {
-        font-size: 200%;
-        padding: 20px;
-        margin-top: 60px;
-      }
-
-      .social a {
-        padding: 2%;
-        color: #FFF;
-      }
-
-      .social a:hover {
-        color: #FCA502;
-      }
-
-      #home {
-        padding-top: 60px;
-      }
-
-      #about {
-        padding: 70px 0;
-      }
-
-      .services-container p {
-        text-align: center;
-      }
-
-      .services-container h2 {
-        font-size: 40px;
-        text-align: center;
-      }
-
-      #portfolio {
-        padding: 50px 0;
-        background-color: #FFFFFF;
-        margin-left: 10px;
-      }
-
-      .boxcontainerimage {
-        position: relative;
-        text-align: center;
-      }
-
-      #design-info h2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-orientation: sideways;
-      }
-
-      .projectselector {
-        text-align: center;
-        padding: 0 0 40px;
+    @media (max-width: 1140px) {
+      #headerImg {
+        width: 64%;
       }
 
       .projectselector p {
-        display: inline;
-        font-weight: 300;
-        padding: 20px;
-        cursor: pointer;
+        font-size: 100%;
       }
 
-      .projectselector p:hover {
-        color: #FFA500;
-        text-shadow: .5px .5px 12.4px #DE6E30;
+    }
+
+
+    @media (max-width: 991px) {
+      #mainTitle {
+        margin-top: 20%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      #headerImg {
+        width: 80%;
+      }
+
+      .projectselector p {
+        font-size: 100%;
+      }
+    }
+
+    @media (max-width: 850px) {
+      #headerImg {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #mainTitle {
+        margin-bottom: 1%;
       }
 
       .image-box {
-        padding: 0;
+        padding: 5px;
       }
 
       .image-box img {
         max-width: 100%;
         margin: auto 0;
-        padding: 6px 6px 24px;
+        padding: 0 0 5px;
       }
 
-      .box {
-        background-color: #ffffff;
-        flex: 1;
-        height: 800px;
-        padding: 0;
+      .projectselector p {
+        font-size: 90%;
+        padding: 0 30px;
       }
 
-      .box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      #headerImg {
+        width: 90%;
       }
 
-      .image-box {
-        position: relative;
-        text-align: center;
+      h1 {
+        font-size: 230%;
       }
 
-      .doughnut {
-      border: 80px solid #FFA500;
-      border-radius: 700px;
-      height: 500px;
-      width: 500px;  
-      margin-top: -200px;
-      margin-left: -200px;
-      margin-bottom: -460px;
+      h2 {
+        font-size: 160%;
       }
 
-      .doughnut-mid {
-      border: 70px solid #5498C6;
-      border-radius: 700px;
-      height: 500px;
-      width: 500px;
-     float: right;
-     margin-right: -400px;
-     margin-top: -360px;
-  
+      h3 {
+        font-size: 120%;
+        max-width: 90%;
       }
 
-      .doughnut-lower {
-      border: 30px solid #4AD7C4;
-      border-radius: 700px;
-      height: 400px;
-      width: 400px;  
-      margin-top: -100px;
-      margin-left: -200px;
-      margin-bottom: -460px;
+      p {
+        font-size: 80%;
       }
 
-       .doughnut-footer {
-      border: 70px solid #FCA502;
-      border-radius: 700px;
-      height: 800px;
-      width: 800px;
-     float: right;
-     margin-right: -300px;
-     margin-top: -700px;
-  
+      .col-sm-4 #icon {
+        max-width: 110px;
+        padding-bottom: 8%;
       }
 
-      .overlay {
-        position: absolute;
-        top: -1%;
-        left: 0;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-        cursor: pointer;
-      }
-
-      .overlay:hover {
-        opacity: 1;
-      }
-
-      .overlay > * {
-        transform: translateY(40px);
-        transition: 0.25s;
-      }
-
-      .overlay:hover > * {
-        transform: translateY(0px);
-      }
-
-      .overlay-blur {
-        backdrop-filter: blur(3px);
-      }
-
-      #projectTitle {
+      .social {
         font-size: 200%;
-        font-weight: 200;
-      }
-
-      footer {
-        color: #FFFFFF;
-        margin-top: -80px;
-        margin-bottom: 10px;
-        padding-bottom: 60px;
-      }
-
-      #connect {
-        background-color: #000000;
-      }
-
-      .contacts a {
-        text-decoration: none;
-        color: white;
-      }
-
-      .contacts a p:hover {
-        color: #DE6E30;
-      }
-
-      .social a:hover {
-        color: #DE6E30;
-      }
-
-      /*Responsive Code */
-
-      @media (max-width: 4000px) {
-        #mainTitle {
-          margin-top: 1.5%;
-        }
-      }
-
-      @media (max-width: 2300px) {
-        #mainTitle {
-          margin-top: 1%;
-        }
-        #headerImg {
-          width: 55%;
-        }
-      }
-
-      @media (max-width: 1366px) {
-        #headerImg {
-          width: 65%;
-        }
 
       }
+    }
 
-      @media (max-width: 1280px) {
-        #headerImg {
-          width: 60%;
-        }
-        .projectselector p {
-          font-size: 120%;
-        }
+    @media (max-width: 700px) {
+      #headerImg {
+        width: 100%;
       }
 
-      @media (max-width: 1140px) {
-        #headerImg {
-          width: 64%;
-        }
-        .projectselector p {
-          font-size: 100%;
-        }
+      #mainTitle {
+        margin-top: 30%;
+      }
+    }
+
+    @media (max-width: 650px) {
+      #headerImg {
+        width: 100%;
+      }
+
+      .projectselector p {
+
+        padding: 10px;
+      }
+
+      #mainTitle {
+        margin-top: 40%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      #mainTitle {
+    font-size: 32px;
+    }
+    }
+
+    @media (max-width: 414px) {
+      #mainTitle {
+        margin-bottom: 14%;
+        margin-top: 50%;
         
       }
+      #mainTitle {
+    font-size: 20px;
+    }
+    }
 
-
-      @media (max-width: 991px) {
-        #mainTitle {
-          margin-top: 20%;
-        }
+    @media (max-width: 390px) {
+      .navbar-brand {
+        width: 30%;
       }
 
-      @media (max-width: 900px) {
-        #headerImg {
-          width: 80%;
-        }
-
-        .projectselector p {
-          font-size: 100%;
-        }
+      #mainTitle {
+        margin-bottom: 14%;
+        margin-top: 60%;
       }
+    }
 
-      @media (max-width: 850px) {
-        #headerImg {
-          width: 100%;
-        }
-      }
-
-      @media (max-width: 768px) {
-        #mainTitle {
-          margin-bottom: 1%;
-        }
-
-        .image-box {
-          padding: 5px;
-        }
-
-        .image-box img {
-          max-width: 100%;
-          margin: auto 0;
-          padding: 0 0 5px;
-        }
-
-        .projectselector p {
-          font-size: 90%;
-          padding: 0 30px;
-        }
-
-        #headerImg {
-          width: 90%;
-        }
-
-        h1 {
-          font-size: 230%;
-        }
-        h2 {
-          font-size: 160%;
-        }
-        h3 {
-          font-size: 120%;
-          max-width: 90%;
-        }
-        p {
-          font-size: 80%;
-        }
-        .col-sm-4 #icon {
-          max-width: 110px;
-          padding-bottom: 8%;
-        }
-        .social {
-          font-size: 200%;
-
-        }
-      }
-
-      @media (max-width: 700px) {
-        #headerImg {
-          width: 100%;
-        }
-        #mainTitle {
-          margin-top: 30%;
-        }
-      }
-
-      @media (max-width: 650px) {
-        #headerImg {
-          width: 100%;
-        }
-        .projectselector p {
-
-          padding: 10px;
-        }
-        #mainTitle {
-          margin-top: 40%;
-        }
-      }
-
-      @media (max-width: 390px) {
-        .navbar-brand {
-          width: 30%;
-        }
-
-        #mainTitle {
-          margin-bottom: 14%;
-        }
-      }
-
-      @media (max-width: 350px) {
-        .navbar-brand img {
-          height: auto;
-          width: 360%;
-          margin-top: 3px;
-        }
-        }
-    </style>
-  </head>
-  <body>
-    <!-- Nav-bar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="Navigation burger menu for dropdown items">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a aria-label="Navigate to Home for AccessAutonomy" href="#" rel=”noreferrer” class="navbar-brand">
-            <img src="images/AccessAutonomyLogo1.jpeg2000" alt="AccessAutonomy Logo"></img>
-          </a>
-        </div>
-        <!-- end of navbar -->
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a aria-label="Navigation Button to portfolio section of this page" rel=”noreferrer” href="#portfolio">Home</a>
-            </li>
-            <li>
-              <a aria-label="Navigation Button to projects section of this page" rel=”noreferrer” href="#projects">Projects</a>
-            </li>
-            <!-- <li><a href="#portfolio">Services</a></li> -->
-            <li>
-              <a aria-label="Navigation Button to connection and contact section of this page" rel=”noreferrer” href="#connect">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <!-- end of navbar collapse -->
-      </div>
-      <!-- end of container -->
-    </nav>
-    <!-- end of nav -->
-    <!-- Before fold info -->
-    <div id="portfolio" class="container-fluid text-center">
-      <br><br><br><br><br><br>
-       <div class="col-md-2">
-        <div class="doughnut"></div>
-        </div>
-      <div class="row"></div>
-      <div class="col-md-12" id="mainTitle">
-        <h1>Design. Build. Maintain.</h1>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <img src="images/LaptopandPhone.jpeg2000" id="headerImg" alt="Main Portfolio Image">
-        </div>
+    @media (max-width: 375px) {
+      #mainTitle {
         
-      </div>
-      <!-- End of Row -->
-    </div>
-    <!-- End of Container -->
-    <div class="container-fluid text-center">
-      <br><br><br>
-    </div>
-    <div class="doughnut-mid"></div>
-    <!-- Services boxcontainer -->
-    <!-- In development <div class="boxcontainer"></div> <div class="row"> <div class="col-md-4 services-container"> <p>Solving problems and filling the gaps in communication.</p> <p>AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance.</p> </div> <div class="boxcontainerimage"></div> <div id="design-info" class="col-md-2 box"> <p>Design.</hp><img id="opacityid" src="Images/Earth-Communications-Image.jpg" /> </div> <div id="design-info" class="col-md-2 box"><p>Development.</p><img id="opacityid" src="images/Skills.jpg"></div> <div id="design-info" class="col-md-2 box"><p>Accessibility</hp><img id="opacityid" src="Images/Access.jpg" /></div> <div id="design-info" class="col-md-2 box"><p>Content management</p><img id="opacityid" src="Images/Web-Development-Image.jpg" /></div> </div> </div> </div> -->
-    <div class="container-fluid projects">
-      <!-- Projects container -->
-      <div class="doughnut-lower"></div>
-      <div class="row">
-        <div id="projects" class="col-md-12 projectselector" style="font-size: 20px;">
-          <p id="idall">All</p>
-          <p id="iddesign">Design</p>
-          <p id="iddevelopment">Development</p>
-          <p id="idaccessibility">Accessibility</p>
-          <p id="idcontent">Content Management</p>
-          <p id="idvideo-and-animations">Video and Animations</p>
-        </div>
-      </div>
-      <div class="row image-box">
-        <a href="https://www.Salesimpact.io" aria-label="Navigation Button to www.salesimpact.io" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-video data-not-accessibility col-md-4">
-            <img src="images/Sia-Landing-Page.jpeg2000" alt="Image of Salesimpact.io Landing Page"/>
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">Salesimpact.io</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.visualskies.com/" aria-label="Navigation Button to www.visualskies.com" target="_blank" rel="noopener">
-          <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/VisualSkies.jpeg2000" alt="Image of VisualSkies Landing Page">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">VisualSkies.com</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.arch-simplified.com/" aria-label="Navigation Button to www.Arch-Simplified.com" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/arch-simplified.jpeg2000" alt="Image of Arch-Simplified Landing Page">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">Arch-Simplified.com</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.visitbritain.org/" aria-label="Navigation Button to www.VisitBritain.com" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-video data-not-design col-md-4">
-            <img src="images/VisitBritian.jpeg2000" alt="Image of VisitBritain.com Landing Page"/>
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">VisitBritain.org</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.MadameWax.com" aria-label="Navigation Button to www.madamewax.com" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-video data-not-design data-not-accessibility col-md-4"><img src="images/MadameWax LandingPage1.jpeg2000" alt="Image of MadameWax Landing Page">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">MadameWax.com</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://youtu.be/TXMyMdEOcAA" aria-label="Navigation Button to an animation of the AccessAutonomy logo in Youtube" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleAnimation.jpeg2000" alt="Image of Title Animations">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">AccessAutonomy Animation</p>
-            </div>
-          </div>
-        </a>
-        <a href="images/FireGraphic.png" aria-label="Navigation Button to a graphic design of a women with hair made of fire" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/FireGraphic1.jpeg2000" alt="Image of Fire Graphic">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">Fire Flies Graphic (1)</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://youtu.be/kETUpubdRfs" aria-label="Navigation Button to an animation of the AccessAutonomy logo title in Youtube" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/AccessAutonomyTitleSequence2.jpeg2000" alt="Image of Title Animations">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">Logo Animation</p>
-            </div>
-          </div>
-        </a>
-        <a href="images/FirePhotoshop.jpeg2000" aria-label="Navigation Button to a graphic design of a women with hair made of fire swishing her hair" target="_blank" rel=”noreferrer”>
-          <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img src="images/FireGraphic.jpeg2000" alt="Image of Fire Graphic">
-            <div class="overlay overlay-blur">
-              <p id="projectTitle">Fire Flies Graphic (2)</p>
-            </div>
-          </div>
-        </a>
+        margin-top: 60%;
+    }
+    }
 
+    @media (max-width: 350px) {
+      .navbar-brand img {
+        height: auto;
+        width: 360%;
+        margin-top: 3px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      #mainTitle {
+        margin-bottom: 14%;
+        margin-top: 50%;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Nav-bar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+          aria-label="Navigation burger menu for dropdown items">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a aria-label="Navigate to Home for AccessAutonomy" href="#" rel=”noreferrer” class="navbar-brand">
+          <img src="images/AccessAutonomyLogo1.jpeg2000" alt="AccessAutonomy Logo"></img>
+        </a>
       </div>
-      <div class="doughnut-footer"></div>
-      <!-- <div class="row imageBox"> <div id="" class="col-md-4"><img src="images/VisitBritian-Landingpage.jpeg2000"></div> </div> -->
+      <!-- end of navbar -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a aria-label="Navigation Button to portfolio section of this page" rel=”noreferrer”
+              href="#portfolio">Home</a>
+          </li>
+          <li>
+            <a aria-label="Navigation Button to projects section of this page" rel=”noreferrer”
+              href="#projects">Projects</a>
+          </li>
+          <!-- <li><a href="#portfolio">Services</a></li> -->
+          <li>
+            <a aria-label="Navigation Button to connection and contact section of this page" rel=”noreferrer”
+              href="#connect">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end of navbar collapse -->
+    </div>
+    <!-- end of container -->
+  </nav>
+  <!-- end of nav -->
+  <!-- Before fold info -->
+  <div id="portfolio" class="container-fluid text-center">
+    <br><br><br><br><br><br>
+    <div class="col-md-2">
+      <div class="doughnut"></div>
+    </div>
+    <div class="row"></div>
+    <div class="col-md-12" id="mainTitle">
+      <h1>Design. Build. Maintain.</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img src="images/LaptopandPhone.jpeg2000" id="headerImg" alt="Main Portfolio Image">
+      </div>
+
     </div>
     <!-- End of Row -->
   </div>
   <!-- End of Container -->
+  <div class="container-fluid text-center">
+    <br><br><br>
+  </div>
+  <div class="doughnut-mid"></div>
+  <!-- Services boxcontainer -->
+  <!-- In development <div class="boxcontainer"></div> <div class="row"> <div class="col-md-4 services-container"> <p>Solving problems and filling the gaps in communication.</p> <p>AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance.</p> </div> <div class="boxcontainerimage"></div> <div id="design-info" class="col-md-2 box"> <p>Design.</hp><img id="opacityid" src="Images/Earth-Communications-Image.jpg" /> </div> <div id="design-info" class="col-md-2 box"><p>Development.</p><img id="opacityid" src="images/Skills.jpg"></div> <div id="design-info" class="col-md-2 box"><p>Accessibility</hp><img id="opacityid" src="Images/Access.jpg" /></div> <div id="design-info" class="col-md-2 box"><p>Content management</p><img id="opacityid" src="Images/Web-Development-Image.jpg" /></div> </div> </div> </div> -->
+  <div class="container-fluid projects">
+    <!-- Projects container -->
+    <div class="row">
+    <div class="col-md-12">
+    <div class="doughnut-lower"></div>
+  </div>
+</div>
+    <div class="row">
+      <div id="projects" class="col-md-12 projectselector" style="font-size: 20px;">
+        <p id="idall">All</p>
+        <p id="iddesign">Design</p>
+        <p id="iddevelopment">Development</p>
+        <p id="idaccessibility">Accessibility</p>
+        <p id="idcontent">Content Management</p>
+        <p id="idvideo-and-animations">Video and Animations</p>
+      </div>
+    </div>
+    <div class="row image-box">
+      <a href="https://www.Salesimpact.io" aria-label="Navigation Button to www.salesimpact.io" target="_blank"
+        rel=”noreferrer”>
+        <div class="idall data-not-video data-not-accessibility col-md-4">
+          <img src="images/Sia-Landing-Page.jpeg2000" alt="Image of Salesimpact.io Landing Page" />
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">Salesimpact.io</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.visualskies.com/" aria-label="Navigation Button to www.visualskies.com" target="_blank"
+        rel="noopener">
+        <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/VisualSkies.jpeg2000"
+            alt="Image of VisualSkies Landing Page">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">VisualSkies.com</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.arch-simplified.com/" aria-label="Navigation Button to www.Arch-Simplified.com"
+        target="_blank" rel=”noreferrer”>
+        <div class="idall data-not-video data-not-accessibility col-md-4"><img src="images/arch-simplified.jpeg2000"
+            alt="Image of Arch-Simplified Landing Page">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">Arch-Simplified.com</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.visitbritain.org/" aria-label="Navigation Button to www.VisitBritain.com" target="_blank"
+        rel=”noreferrer”>
+        <div class="idall data-not-video data-not-design col-md-4">
+          <img src="images/VisitBritian.jpeg2000" alt="Image of VisitBritain.com Landing Page" />
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">VisitBritain.org</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.MadameWax.com" aria-label="Navigation Button to www.madamewax.com" target="_blank"
+        rel=”noreferrer”>
+        <div class="idall data-not-video data-not-design data-not-accessibility col-md-4"><img
+            src="images/MadameWax LandingPage1.jpeg2000" alt="Image of MadameWax Landing Page">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">MadameWax.com</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://youtu.be/TXMyMdEOcAA"
+        aria-label="Navigation Button to an animation of the AccessAutonomy logo in Youtube" target="_blank"
+        rel=”noreferrer”>
+        <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img
+            src="images/AccessAutonomyTitleAnimation.jpeg2000" alt="Image of Title Animations">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">AccessAutonomy Animation</p>
+          </div>
+        </div>
+      </a>
+      <a href="images/FireGraphic.png"
+        aria-label="Navigation Button to a graphic design of a women with hair made of fire" target="_blank"
+        rel=”noreferrer”>
+        <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img
+            src="images/FireGraphic1.jpeg2000" alt="Image of Fire Graphic">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">Fire Flies Graphic (1)</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://youtu.be/kETUpubdRfs"
+        aria-label="Navigation Button to an animation of the AccessAutonomy logo title in Youtube" target="_blank"
+        rel=”noreferrer”>
+        <div class="idall data-not-design data-not-content data-not-development data-not-accessibility col-md-4"><img
+            src="images/AccessAutonomyTitleSequence2.jpeg2000" alt="Image of Title Animations">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">Logo Animation</p>
+          </div>
+        </div>
+      </a>
+      <a href="images/FirePhotoshop.jpeg2000"
+        aria-label="Navigation Button to a graphic design of a women with hair made of fire swishing her hair"
+        target="_blank" rel=”noreferrer”>
+        <div class="idall data-not-video data-not-content data-not-development data-not-accessibility col-md-4"><img
+            src="images/FireGraphic.jpeg2000" alt="Image of Fire Graphic">
+          <div class="overlay overlay-blur">
+            <p id="projectTitle">Fire Flies Graphic (2)</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+    <div class="doughnut-footer"></div>
+    <!-- <div class="row imageBox"> <div id="" class="col-md-4"><img src="images/VisitBritian-Landingpage.jpeg2000"></div> </div> -->
+  </div>
+  <!-- End of Row -->
+  </div>
+  <!-- End of Container -->
   <!-- Contact container -->
   <!-- End of Container -->
- 
+
   <footer id="connect" class="container-fluidls text-center">
     <div class="row contacts">
       <div class="social">
-        <a aria-label="Navigate to Alec Dannmayrs github account" href="https://www.github.com/AlecDannmayr" target="_blank" rel=”noreferrer”>
+        <a aria-label="Navigate to Alec Dannmayrs github account" href="https://www.github.com/AlecDannmayr"
+          target="_blank" rel=”noreferrer”>
           <i class="fab fa-github"></i>
         </a>
-        
-        <a aria-label="Navigate to AccessAutonomy Facebook account" href="https://www.linkedin.com/company/12601742/admin/" target="_blank" rel=”noreferrer”>
+
+        <a aria-label="Navigate to AccessAutonomy Facebook account"
+          href="https://www.linkedin.com/company/12601742/admin/" target="_blank" rel=”noreferrer”>
           <i class="fab fa-linkedin"></i>
-        </a> 
-        <a aria-label="Navigate to AccessAutonomy youtube account" href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel=”noreferrer”>
+        </a>
+        <a aria-label="Navigate to AccessAutonomy youtube account"
+          href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel=”noreferrer”>
           <i class="fab fa-youtube"></i>
         </a>
-        
+
         <a aria-label="Navigate to AccessAutonomy Instagram account" href="" target="_blank" rel=”noreferrer”>
-          <i class="fab fa-instagram"></i> 
+          <i class="fab fa-instagram"></i>
         </a>
       </div>
       <!-- end of row -->
-      <a aria-label="Opens up an email addressed to hello@accessautonomy.com" href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site" rel=”noreferrer”>
+      <a aria-label="Opens up an email addressed to hello@accessautonomy.com"
+        href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site" rel=”noreferrer”>
         <p>Email: hello@accessautonomy.com</p>
       </a>
       <p>Tel: 07837923216</p>
@@ -669,41 +747,41 @@
 
 
   <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });</script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });</script>
 
 
 
-  
+
   <script>
     $(document).on('click', '.navbar-collapse.in', function (e) {
       if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) {
         $(this).collapse('hide');
       }
     });
-  
+
 
     $(document).ready(function () {
 
