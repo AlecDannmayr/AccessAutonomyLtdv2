@@ -10,11 +10,13 @@
     content="More companies than ever are turning to digital communication and remote working to continue to power their business, at AccessAutonomy it is our job to be problem solvers and figure out how to fill the gaps in digital communication. AccessAutonomy offers services in frontend web development, design, web accessibility, web integrations, content management and e-commerce maintenance. With years of experience in front-end languages and modern frameworks to leave clients with an ongoing legacy and accessible development." />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <link rel="icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon" />
-  <link rel="shortcut icon" href="images/AccessAutonomyLogowlb.jpeg2000" type="image/icon" />
+  <link rel="icon" href="images/AccessAutonomyLogowlb.png" type="image/icon" />
+  <link rel="shortcut icon" href="images/AccessAutonomyLogowlb.png" type="image/icon" />
+
+</head>
 
   <style>
     /* main design code*/
@@ -25,7 +27,7 @@
       color: #000000;
       font-weight: 400;
       margin: 0;
-      overflow-x: hidden;
+      
     }
 
     .navbar {
@@ -82,26 +84,6 @@
     h2,
     h3 {
       font-weight: 400;
-    }
-
-    .doughnut {
-
-      border: 50px solid #FFA500;
-      border-radius: 700px;
-      height: 500px;
-      width: 500px;
-      margin-top: -200px;
-      margin-left: -200px;
-      margin-bottom: -460px;
-    }
-
-    .doughnut-mid {
-      border: 50px solid #FFA500;
-      border-radius: 700px;
-      height: 500px;
-      width: 500px;
-      float: right;
-
     }
 
     #mainTitle {
@@ -171,6 +153,10 @@
       padding: 50px 0;
       background-color: #FFFFFF;
       margin-left: 10px;
+    }
+
+    #portfolio {
+      overflow-x: hidden;
     }
 
     .boxcontainerimage {
@@ -246,9 +232,9 @@
       border-radius: 700px;
       height: 500px;
       width: 500px;
-      float: right;
       margin-right: -400px;
       margin-top: -360px;
+     
 
     }
 
@@ -260,17 +246,6 @@
       margin-top: -100px;
       margin-left: -200px;
       margin-bottom: -460px;
-    }
-
-    .doughnut-footer {
-      border: 70px solid #FCA502;
-      border-radius: 700px;
-      height: 800px;
-      width: 800px;
-      float: right;
-      margin-right: -300px;
-      margin-top: -700px;
-
     }
 
     .overlay {
@@ -312,13 +287,13 @@
 
     footer {
       color: #FFFFFF;
-      margin-top: -80px;
+      margin-top: 40px;
       margin-bottom: 10px;
       padding-bottom: 60px;
     }
 
     #connect {
-      background-color: #000000;
+      background-color: #FCA502;
     }
 
     .contacts a {
@@ -367,6 +342,9 @@
       .projectselector p {
         font-size: 120%;
       }
+      #mainTitle {
+        margin-top: -2%;
+      }
     }
 
     @media (max-width: 1140px) {
@@ -377,6 +355,7 @@
       .projectselector p {
         font-size: 100%;
       }
+      
 
     }
 
@@ -478,6 +457,9 @@
       #mainTitle {
         margin-top: 40%;
       }
+      .doughnut-mid {
+     display: none;
+    }
     }
 
     @media (max-width: 500px) {
@@ -492,6 +474,7 @@
         margin-top: 50%;
         
       }
+
       #mainTitle {
     font-size: 20px;
     }
@@ -531,7 +514,6 @@
     }
     
   </style>
-</head>
 
 <body>
   <!-- Nav-bar -->
@@ -700,9 +682,8 @@
           </div>
         </div>
       </a>
-
     </div>
-    <div class="doughnut-footer"></div>
+    
     <!-- <div class="row imageBox"> <div id="" class="col-md-4"><img src="images/VisitBritian-Landingpage.jpeg2000"></div> </div> -->
   </div>
   <!-- End of Row -->
@@ -768,14 +749,11 @@
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
-        } // End if
+        }
       });
-    });</script>
+    });
 
 
-
-
-  <script>
     $(document).on('click', '.navbar-collapse.in', function (e) {
       if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) {
         $(this).collapse('hide');
@@ -783,28 +761,33 @@
     });
 
 
-    $(document).ready(function () {
+$(document).ready(function () {
 
-      $("#idall").on('click', function () {
-        $(".idall").show(000);
-      });
-      $("#iddesign").on('click', function () {
-        $(".data-not-design").toggle(000);
-      });
-      $("#iddevelopment").on('click', function () {
-        $(".data-not-development").toggle(000);
-      });
-      $("#idaccessibility").on('click', function () {
-        $(".data-not-accessibility").toggle(000);
-      });
-      $("#idcontent").on('click', function () {
-        $(".data-not-content").toggle(000);
-      });
-      $("#idvideo-and-animations").on('click', function () {
-        $(".data-not-video").toggle(000);
-      });
-    });
-  </script>
+  $("#idall").click(function () {
+      $(".idall").show();
+  });
+
+  $("#iddesign").click(function () {
+      $(".data-not-design").show();
+      $(".data-not-development").hide();
+      $(".data-not-accessibility").hide();
+      $(".data-not-content").hide();
+      $(".data-not-video").hide();
+
+  });
+
+  $("#iddesign").click(function () {
+      $(".data-not-design").show();
+      $(".data-not-development").hide();
+      $(".data-not-accessibility").hide();
+      $(".data-not-content").hide();
+      $(".data-not-video").hide();
+
+  });
+ 
+});
+</script>
+
 </body>
 
 </html>
