@@ -318,14 +318,24 @@
       color: #DE6E30;
     }
 
-    .medium-iframe {
-    display: none;
-    }
-     .mobile-iframe {
-    display: none;
+ 
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+      margin-top: 80px;
     }
 
-    
+    .iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
 
     /*Responsive Code */
 
@@ -434,14 +444,6 @@
       h3 {
         font-size: 120%;
         max-width: 90%;
-      }
-
-      .medium-iframe {
-        display: block;
-      }
-
-      .normal-iframe {
-      display: none;
       }
 
       p {
@@ -601,17 +603,13 @@
 
     <div class="container-fluid text-center about-access"> 
     <div class="row">
-        <div class="col-md-6">
-        <div class="iframe-border normal-iframe" style="width: 540px; height: 464px; overflow: hidden;
-    margin: 0 auto; margin-top: 170px;">
-      <iframe style="position: relative; top: -84px;" src="https://player.vimeo.com/video/497075932" width="540" height="464" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="col-md-8">
+        <div class="iframe-container">
+      <iframe class="iframe" src="https://player.vimeo.com/video/497075932" width="540" height="464" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
-        <div class="iframe-border medium-iframe" style="width: 740px; height: 664px; overflow: hidden;
-    margin: 0 auto; margin-top: 170px;">
-      <iframe style="position: relative; top: -130px;" src="https://player.vimeo.com/video/497075932" width="740" height="664" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+       
         </div>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
         <div class="about-content">
       
         <h2>Who are AccessAutonomy?</h2>
