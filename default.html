@@ -25,7 +25,7 @@
       color: #000000;
       font-weight: 400;
       overflow-x: hidden;
-      margin-right: 0px;
+      margin-right: 0 !important;
 
     }
 
@@ -92,10 +92,13 @@
 
     #headerImg {
       width: 60%;
+      position: relative;
+      z-index: 1;
     }
 
     img.banner {
       width: 100%;
+      
     }
 
     h1 {
@@ -167,10 +170,6 @@
       text-orientation: sideways;
     }
 
-    .image-box {
-      margin-left: px;
-    }
-
     .projectselector {
       text-align: center;
       padding: 0 0 40px;
@@ -225,7 +224,6 @@
       margin-top: -200px;
       margin-left: -200px;
       margin-bottom: -460px;
-
     }
 
     .doughnut-mid {
@@ -235,7 +233,18 @@
       width: 500px;
       margin-right: -400px;
       margin-top: -360px;
+      position: relative;
+    }
 
+    .doughnut-mid-2 {
+    border: 50px solid #4AD7C4;
+      border-radius: 700px;
+      height: 300px;
+      width: 300px;
+      margin-left: 100px;
+      margin-top: -150px;
+      position: relative;
+      z-index: 0;
     }
 
     .doughnut-lower {
@@ -249,12 +258,8 @@
     }
 
     .about-access {
-    background-color: #FCA502;
-  font-weight: 400;
-    }
-
-    .about-content {
-    margin-top: 220px;
+      background-color: #FCA502;
+      font-weight: 400;
     }
 
     .overlay {
@@ -318,7 +323,11 @@
       color: #DE6E30;
     }
 
- 
+    .about-access {
+    margin-top: -100px;
+    z-index: 2;
+    }
+
     .iframe-container {
       position: relative;
       overflow: hidden;
@@ -330,13 +339,14 @@
 
     .iframe {
       position: absolute;
-       top: -10px;
+      top: -10px;
       left: 0;
       bottom: 0;
       right: 0;
       width: 100%;
       height: 100%;
     }
+
 
     /*Responsive Code */
 
@@ -461,7 +471,6 @@
 
       }
     }
-
 
     @media (max-width: 700px) {
       #headerImg {
@@ -602,24 +611,23 @@
     </div>
     <div class="doughnut-mid"></div>
 
-    <div class="container-fluid text-center about-access"> 
-    <div class="row">
+    <div class="container-fluid text-center about-access">
+      <div class="row">
         <div class="col-md-8">
-        <div class="iframe-container">
-      <iframe class="iframe" src="https://player.vimeo.com/video/497075932" width="540" height="464" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div>
-       
+          <div class="iframe-container">
+            <iframe class="iframe" src="https://player.vimeo.com/video/497075932" width="540" height="464" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="allowfullscreen"></iframe>
+          </div>
         </div>
         <div class="col-md-4">
-        <div class="about-content">
-      
-        <h2>Who are AccessAutonomy?</h2>
-        <p>More companies than ever are turning to digital communication and remote working to continue to power their business, at AccessAutonomy it is our job to be problem solvers and figure out how to fill the gaps in digital communication.</p>
-        <p>
-AccessAutonomy offers services in web frontend development, design, accessibility, integrations, content management e-commerce, video production and motion graphics. We use a modern technology stack and a wide range of stable frameworks and librarys</p>
+        <div class="doughnut-mid-2"></div>
+          <div class="about-content">
+            <h2>Who are AccessAutonomy?</h2>
+            <p>More companies than ever are turning to digital communication and remote working to continue to power their business, at AccessAutonomy it is our job to be problem solvers and figure out how to fill the gaps in digital communication.</p>
+            <p>
+              AccessAutonomy offers services in web frontend development, design, accessibility, integrations, content management e-commerce, video production and motion graphics. We use a modern technology stack and a wide range of stable frameworks and librarys</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </div>
 
     <!-- Services boxcontainer -->
@@ -642,7 +650,7 @@ AccessAutonomy offers services in web frontend development, design, accessibilit
         </div>
       </div>
       <div class="row image-box">
-      <a href="https://www.vbaazar.com" aria-label="Navigation Button to www.vbaazar.com" target="_blank" rel="”noreferrer”">
+        <a href="https://www.vbaazar.com" aria-label="Navigation Button to www.vbaazar.com" target="_blank" rel="”noreferrer”">
           <div class="idall data-not-video data-not-accessibility col-md-4">
             <img src="images/Vbaazar.jpeg2000" alt="Image of Vbaazar Landing Page"/>
             <div class="overlay overlay-blur">
