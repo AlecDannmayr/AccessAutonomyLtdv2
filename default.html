@@ -136,8 +136,8 @@
 
   .social {
     font-size: 200%;
-    padding: 20px;
-    margin-top: 60px;
+    padding: 0px;
+
   }
 
   .social a {
@@ -147,6 +147,12 @@
 
   .social a:hover {
     color: #FCA502;
+  }
+
+  .social-footer {
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 50px;
   }
 
   #home {
@@ -200,7 +206,7 @@
   }
 
   .projectselector p:hover {
-    color: #FFA500;
+    color: #F4B41A;
     text-shadow: 0.5px 0.5px 12.4px #DE6E30;
   }
 
@@ -233,7 +239,7 @@
   }
 
   .doughnut {
-    border: 80px solid #FFA500;
+    border: 80px solid #F4B41A;
     border-radius: 700px;
     height: 1000px;
     width: 1000px;
@@ -320,15 +326,52 @@
     font-weight: 200;
   }
 
-  footer {
+  #footer-logo-img {
+    width: 140px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .footer-nav p {
+    display: inline;
+    margin: 20px;
+    font-size: 16px;
+  }
+
+
+
+  .pre-footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F4B41A;
+    margin-bottom: -60px;
+  }
+
+ hr {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  footer p{
     color: #FFFFFF;
     margin-top: 40px;
     margin-bottom: 10px;
-    padding-bottom: 60px;
+  }
+
+  .footer-social p {
+    display: inline;
+    padding-bottom: 40px;
+  }
+
+  .footer-social {
+    padding-bottom: 40px;
+    margin-top: -28px;
+    text-align: left;
+    margin-left : 120px;
   }
 
   #connect {
-    background-color: #FCA502;
+    background-color: #12273A;
   }
 
   .contacts a {
@@ -337,16 +380,17 @@
   }
 
   .contacts a p:hover {
-    color: #DE6E30;
+    color: #F4B41A;
   }
 
   .social a:hover {
-    color: #DE6E30;
+    color: #F4B41A;
   }
 
   .about-access {
     margin-top: -150px;
     z-index: 2;
+    background-color: #F4B41A;
   }
 
   .about-content {
@@ -435,7 +479,7 @@
     }
 
     .doughnut {
-      border: 80px solid #FFA500;
+      border: 80px solid #12273A;
       border-radius: 700px;
       height: 800px;
       width: 800px;
@@ -447,7 +491,7 @@
     }
 
     .doughnut-mid {
-      border: 60px solid #5498C6;
+      border: 60px solid #F4B41A;
       border-radius: 700px;
       height: 750px;
       width: 750px;
@@ -458,7 +502,7 @@
     }
 
     .doughnut-mid-2 {
-      border: 30px solid #4AD7C4;
+      border: 30px solid #143D59;
       border-radius: 700px;
       height: 560px;
       width: 560px;
@@ -470,7 +514,7 @@
     }
 
     .doughnut-lower {
-      border: 30px solid #4AD7C4;
+      border: 30px solid #143D59;
       border-radius: 700px;
       height: 460px;
       width: 460px;
@@ -567,6 +611,9 @@
 
     .projectselector p {
       font-size: 120%;
+      border: 2px #143D59 solid;
+      border-radius: px;
+      padding:
     }
 
     .doughnut-mid-2 {
@@ -1019,10 +1066,20 @@
   <!-- End of Container -->
   <!-- Contact container -->
   <!-- End of Container -->
-
+  <div class="pre-footer-container"></div>
   <footer id="connect" class="container-fluidls text-center">
     <div class="row contacts">
       <div class="social">
+        <div class="row footer-nav">
+        <div class="col-md-4"><img id="footer-logo-img" src="images/AccessAutonomyLogoOrg.png"></div>
+        <div class="col-md-8">
+          <p>Home</p>
+          <p>Projects</p>
+          <p>Contact</p>
+        </div>
+        </div>
+        <hr/>
+        <div class="social-footer">
         <a aria-label="Navigate to Alec Dannmayrs github account" href="https://www.github.com/AlecDannmayr"
           target="_blank" rel="”noreferrer”">
           <i class="fab fa-github"></i>
@@ -1036,20 +1093,21 @@
           href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel="”noreferrer”">
           <i class="fab fa-youtube"></i>
         </a>
-
-        <a aria-label="Navigate to AccessAutonomy Instagram account" href="" target="_blank" rel="”noreferrer”">
-          <i class="fab fa-instagram"></i>
-        </a>
       </div>
+    </div>
       <!-- end of row -->
+      <!--
       <a aria-label="Opens up an email addressed to hello@accessautonomy.com"
         href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site" rel="”noreferrer”">
         <p>Email: hello@accessautonomy.com</p>
       </a>
       <p>Tel: 07837923216</p>
+      -->
+      <div class="footer-social">
       <p id="compinfo">Company No. 128650075</p>
       <p id="compinfo">© 2021 AccessAutonomy Ltd</p>
     </div>
+  </div>
   </footer>
   <!-- end of container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
