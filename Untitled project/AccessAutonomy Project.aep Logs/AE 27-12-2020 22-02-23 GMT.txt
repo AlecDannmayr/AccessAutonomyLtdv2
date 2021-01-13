@@ -1,1 +1,0 @@
-  27/12/2020 22:02:23 GMT: Starting composition “Animation”.  Output To: /Users/alecdannmayr/Desktop/Animation.wav    27/12/2020 22:02:23 GMT: Finished composition “Animation”.  Total Time Elapsed: 0 SecondsLog closed on 27/12/2020 at 22:02:23 GMT

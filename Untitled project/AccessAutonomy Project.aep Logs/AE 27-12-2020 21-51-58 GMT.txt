@@ -1,1 +1,0 @@
-  27/12/2020 21:51:58 GMT: Starting composition “Animation”.  Output To: /Users/alecdannmayr/Desktop/Animation.mov    27/12/2020 21:52:26 GMT: Finished composition “Animation”.  Total Time Elapsed: 28 SecondsLog closed on 27/12/2020 at 21:52:27 GMT
