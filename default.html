@@ -51,7 +51,7 @@
   }
 
   .navbar-nav li {
-    padding-right: 50px;
+    padding-right: 20px;
     padding-top: 26px;
   }
 
@@ -239,7 +239,7 @@
   }
 
   .doughnut {
-    border: 80px solid #F4B41A;
+    border: 80px solid #143D59;
     border-radius: 700px;
     height: 1000px;
     width: 1000px;
@@ -251,7 +251,7 @@
   }
 
   .doughnut-mid {
-    border: 60px solid #5498C6;
+    border: 60px solid #F6A415;
     border-radius: 700px;
     height: 700px;
     width: 700px;
@@ -262,7 +262,7 @@
   }
 
   .doughnut-mid-2 {
-    border: 30px solid #4AD7C4;
+    border: 30px solid #12273A;
     border-radius: 700px;
     height: 600px;
     width: 600px;
@@ -274,7 +274,7 @@
   }
 
   .doughnut-lower {
-    border: 30px solid #4AD7C4;
+    border: 30px solid #12273A;
     border-radius: 700px;
     height: 500px;
     width: 500px;
@@ -334,10 +334,14 @@
 
   .footer-nav p {
     display: inline;
-    margin: 20px;
+    margin: 40px;
     font-size: 16px;
   }
 
+  .footer-nav-content-info {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
 
 
   .pre-footer-container {
@@ -355,7 +359,7 @@
   footer p{
     color: #FFFFFF;
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
   }
 
   .footer-social p {
@@ -367,11 +371,15 @@
     padding-bottom: 40px;
     margin-top: -28px;
     text-align: left;
-    margin-left : 120px;
+    margin-left: 120px;
   }
 
   #connect {
     background-color: #12273A;
+  }
+
+  .container-fluidls {
+    margin-bottom: -10px;
   }
 
   .contacts a {
@@ -479,7 +487,7 @@
     }
 
     .doughnut {
-      border: 80px solid #12273A;
+
       border-radius: 700px;
       height: 800px;
       width: 800px;
@@ -491,7 +499,6 @@
     }
 
     .doughnut-mid {
-      border: 60px solid #F4B41A;
       border-radius: 700px;
       height: 750px;
       width: 750px;
@@ -502,7 +509,6 @@
     }
 
     .doughnut-mid-2 {
-      border: 30px solid #143D59;
       border-radius: 700px;
       height: 560px;
       width: 560px;
@@ -514,7 +520,6 @@
     }
 
     .doughnut-lower {
-      border: 30px solid #143D59;
       border-radius: 700px;
       height: 460px;
       width: 460px;
@@ -611,9 +616,6 @@
 
     .projectselector p {
       font-size: 120%;
-      border: 2px #143D59 solid;
-      border-radius: px;
-      padding:
     }
 
     .doughnut-mid-2 {
@@ -653,6 +655,11 @@
 
         #headerImg {
           width: 80%;
+        }
+        .footer-nav-content-info {
+          margin-top: 0%;
+          margin-left: 0px;
+          
         }
       }
 
@@ -723,7 +730,8 @@
           font-size: 200%;
 
         }
-      }
+
+          }
 
       @media (max-width: 700px) {
         #headerImg {
@@ -1071,11 +1079,13 @@
     <div class="row contacts">
       <div class="social">
         <div class="row footer-nav">
-        <div class="col-md-4"><img id="footer-logo-img" src="images/AccessAutonomyLogoOrg.png"></div>
-        <div class="col-md-8">
+        <!--<div class="col-md-4"><img id="footer-logo-img" src="images/AccessAutonomyYellow.png"></div> -->
+        <div class="col-md-12">
+          <div class="footer-nav-content-info">
           <p>Home</p>
           <p>Projects</p>
           <p>Contact</p>
+        </div>
         </div>
         </div>
         <hr/>
@@ -1097,7 +1107,7 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
-    </div>
+   
       <!-- end of row -->
       <!--
       <a aria-label="Opens up an email addressed to hello@accessautonomy.com"
