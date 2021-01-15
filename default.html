@@ -149,11 +149,6 @@
     color: #FCA502;
   }
 
-  .social-footer {
-    text-align: right;
-    margin-right: 100px;
-    margin-top: 50px;
-  }
 
   #home {
     padding-top: 60px;
@@ -287,6 +282,7 @@
     background-color: #FDE449;
     font-weight: 400;
     padding-top: 100px;
+
   }
 
   .overlay {
@@ -332,6 +328,12 @@
     max-width: 100%;
   }
 
+  .footer-nav  {
+    margin-top: 40px;
+    margin-bottom: -20px;
+
+  }
+
   .footer-nav p {
     display: inline;
     margin: 40px;
@@ -339,7 +341,6 @@
   }
 
   .footer-nav-content-info {
-    margin-top: 4%;
     margin-bottom: 4%;
   }
 
@@ -362,16 +363,17 @@
     margin-bottom: -10px;
   }
 
-  .footer-social p {
+  .company-info p {
     display: inline;
-    padding-bottom: 40px;
+    font-size: 14px;
+  }
+
+  .closing-div {
+    margin-bottom: 30px;
   }
 
   .footer-social {
-    padding-bottom: 40px;
-    margin-top: -28px;
-    text-align: left;
-    margin-left: 120px;
+  
   }
 
   #connect {
@@ -425,7 +427,6 @@
     width: 100%;
     height: 100%;
   }
-
 
   /*Responsive Code */
 
@@ -656,6 +657,11 @@
         #headerImg {
           width: 80%;
         }
+
+        .company-info {
+          margin-bottom: 20px;
+        }
+
         .footer-nav-content-info {
           margin-top: 0%;
           margin-left: 0px;
@@ -730,6 +736,9 @@
           font-size: 200%;
 
         }
+        .footer-nav p {
+          margin: 10px;
+        }
 
           }
 
@@ -768,6 +777,13 @@
         .doughnut-mid {
           display: none;
         }
+        .footer-nav p {
+          font-size: 12px;
+          margin: 0px;
+        }
+        .company-info p {
+          font-size: 12px;
+        }
       }
 
       @media (max-width: 500px) {
@@ -782,6 +798,19 @@
 
         #mainTitle {
           font-size: 20px;
+        }
+        .footer-nav p {
+          font-size: 12px;
+          margin: -4px;
+        }
+        .company-info p {
+          font-size: 10px;
+        }
+        .fa-linkedin, .fa-github, .fa-vimeo, .fa-youtube {
+        font-size: 20px;
+        }
+        .footer-nav {
+          margin-bottom: 20px;
         }
       }
 
@@ -803,7 +832,20 @@
           margin-bottom: 00px;
           margin-top: -100px;
         }
-
+        .footer-nav p {
+          font-size: 20px;
+          margin: -4px;
+        }
+        .company-info p {
+          font-size: 14px;
+        }
+        .fa-linkedin, .fa-github, .fa-vimeo, .fa-youtube {
+        font-size: 30px;
+        }
+        hr {
+          margin-right: 40px;
+          margin-left: 40px;
+        }
       }
 
       @media (max-width: 390px) {
@@ -822,6 +864,19 @@
         }
       }
 
+      @media (max-width: 376px) {
+        .footer-nav p {
+          font-size: 18px;
+        }
+        .company-info p {
+          font-size: 12px;
+        }
+        hr {
+          margin-right: 30px;
+          margin-left: 30px;
+        }
+      }
+
       @media (max-width: 350px) {
         .navbar-brand img {
           height: auto;
@@ -830,12 +885,43 @@
         }
       }
 
+      @media (max-width: 332px) {
+        .footer-nav p {
+          font-size: 18px;
+        }
+        .company-info p {
+          font-size: 10px;
+        }
+        .fa-linkedin, .fa-github, .fa-vimeo, .fa-youtube {
+        font-size: 30px;
+        }
+        hr {
+          margin-right: 40px;
+          margin-left: 40px;
+        }
+      }
+
+
       @media (max-width: 320px) {
         #mainTitle {
           margin-bottom: -10%;
           margin-top: -10%;
         }
+        .footer-nav p {
+          font-size: 16px;
+        }
+        .company-info p {
+          font-size: 10px;
+        }
+        .fa-linkedin, .fa-github, .fa-vimeo, .fa-youtube {
+        font-size: 30px;
+        }
+        hr {
+          margin-right: 40px;
+          margin-left: 40px;
+        }
       }
+
 </style>
 
 </head>
@@ -864,6 +950,10 @@
             <a aria-label="Navigation Button to portfolio section of this page"
               href="#portfolio">Home</a>
           </li>
+          <li>
+            <a aria-label="Navigation Button to portfolio section of this page"
+            href="#about">About</a>
+            </li>
           <li>
             <a aria-label="Navigation Button to projects section of this page"
               href="#projects">Projects</a>
@@ -907,7 +997,7 @@
 
   </div>
 
-  <div class="container-fluid text-center about-access">
+  <div class="container-fluid text-center about-access" id="about">
     <div class="row">
       <div class="col-md-8">
         <div class="iframe-container">
@@ -1082,45 +1172,47 @@
         <!--<div class="col-md-4"><img id="footer-logo-img" src="images/AccessAutonomyYellow.png"></div> -->
         <div class="col-md-12">
           <div class="footer-nav-content-info">
-          <p>Home</p>
-          <p>Projects</p>
-          <p>Contact</p>
+            <a aria-label="Navigation Button to portfolio section of this page"
+            href="#portfolio"><p>Home</p></a>
+            <a aria-label="Navigation Button to portfolio section of this page"
+            href="#about"><p>About</p></a>
+            <a aria-label="Navigation Button to portfolio section of this page"
+            href="#projects"><p>Projects</p></a>
+            <a aria-label="Navigation Button to connection and contact section of this page"
+            href="#connect"><p>Contact</p></a>
         </div>
         </div>
         </div>
         <hr/>
-        <div class="social-footer">
-        <a aria-label="Navigate to AccessAutonomy youtube account"
-        href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel="”noreferrer”">
-        <i class="fab fa-vimeo"></i>
-      </a>
-        <a aria-label="Navigate to AccessAutonomy youtube account"
-        href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel="”noreferrer”">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a aria-label="Navigate to Alec Dannmayrs github account" href="https://www.github.com/AlecDannmayr"
-          target="_blank" rel="”noreferrer”">
-          <i class="fab fa-github"></i>
-        </a>
-        <a aria-label="Navigate to AccessAutonomy Facebook account"
-          href="https://www.linkedin.com/company/12601742/admin/" target="_blank" rel="”noreferrer”">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-   
-      <!-- end of row -->
-      <!--
-      <a aria-label="Opens up an email addressed to hello@accessautonomy.com"
-        href="mailto:hello@accessautonomy.com?cc=alec@accessautonomy.com&subject=Mail from Our Site" rel="”noreferrer”">
-        <p>Email: hello@accessautonomy.com</p>
-      </a>
-      <p>Tel: 07837923216</p>
-      -->
-      <div class="footer-social">
-      <p id="compinfo">Company No. 128650075</p>
-      <p id="compinfo">© 2021 AccessAutonomy Ltd</p>
+        <div class="closing-div">
+      <div class="row">
+<div class="col-md-6">
+      <div class="company-info">
+      <p>Company No. 128650075 © AccessAutonomy Ltd 2021</p>
     </div>
   </div>
+  <div class="col-md-6">
+    <div class="footer-social">
+    <a aria-label="Navigate to AccessAutonomy youtube account"
+    href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel="”noreferrer”">
+    <i class="fab fa-vimeo"></i>
+  </a>
+    <a aria-label="Navigate to AccessAutonomy youtube account"
+    href="https://www.youtube.com/channel/UC_bbk1s-JLbyrs3f5lyZ_qA" target="_blank" rel="”noreferrer”">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a aria-label="Navigate to Alec Dannmayrs github account" href="https://www.github.com/AlecDannmayr"
+      target="_blank" rel="”noreferrer”">
+      <i class="fab fa-github"></i>
+    </a>
+    <a aria-label="Navigate to AccessAutonomy Facebook account"
+      href="https://www.linkedin.com/company/12601742/admin/" target="_blank" rel="”noreferrer”">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+  </div>
+</div>
+</div>
   </footer>
   <!-- end of container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1185,3 +1277,10 @@
 </body>
 
 </html>
+
+
+
+
+
+     
+  
