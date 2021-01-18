@@ -1067,7 +1067,10 @@
         <p id="idvideo-and-animations">Video and Animations</p>
       </div>
     </div>
+
+
     <div class="row image-box">
+      <div id="time">Time here</div>
       <a href="https://www.vbaazar.com" aria-label="Navigation Button to www.vbaazar.com" target="_blank"
         rel="”noreferrer”">
         <div class="idall data-not-video data-not-accessibility col-md-4">
@@ -1302,7 +1305,33 @@
         $(".data-not-video").toggle(000);
       });
     });
+
+
+    (function () {
+      "use strict";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var c = document.getElementById("time");
+
+
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+          var d = new Date();
+
+          var hours = d.getHours();
+          if (hours > 12) {
+            hours -= 12;
+          }
+
+          c.innerHTML = hours + ":" + d.getMinutes() + ":" + d.getSeconds();
+        }
+      });
+    })();
+
+
   </script>
+
 </body>
 
 </html>
