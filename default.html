@@ -1316,7 +1316,7 @@
         var d = new Date();
 
 
-        setTimeout(updateTime, 1000)
+        setInterval(updateTime, 1000)
 
         function updateTime() {
           var hours = d.getHours();
@@ -1324,7 +1324,7 @@
             hours -= 12;
           }
 
-          c.innerHTML = hours + ":" + d.getMinutes();
+          c.innerHTML = hours + ":" + d.getMinutes() + ":" + d.getSeconds();
         }
       });
     })();
