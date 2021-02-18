@@ -978,7 +978,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a aria-label="Navigation Button to portfolio section of this page" href="#portfolio">Home</a>
+            <a aria-label="Navigation Button to portfolio section of this page" id="item1" href="#portfolio">Home</a>
           </li>
           <li>
             <a aria-label="Navigation Button to portfolio section of this page" href="#about">About</a>
@@ -1337,8 +1337,12 @@
     })();
 
 
+    function test(a, b) {
+      alert(a + b);
+    }
+    test("John", "is cool");
 
-
+    document.getElementById("item1").innerHTML = "blah blah"
 
   </script>
 
